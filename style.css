@@ -440,14 +440,24 @@ body {
         font-size: 28px;
         /* Riduci la dimensione del testo per schermi più piccoli */
     }
-
-    
+    .form {
+        width: 1100px;
+    }
+    .contatti {
+        display: block;
+    }
+    .infocontact {
+        max-width: 100%;
+    }
 }
 
 
 
 
 @media screen and (max-width: 740px) {
+    .form {
+        width: 700px;
+    }
     .links {
         display: none;
     }
