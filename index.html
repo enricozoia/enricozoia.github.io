@@ -1,563 +1,570 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="images/favicon.png">
-  <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Mono&display=swap"
-    rel="stylesheet">
-
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-  <link rel="stylesheet" href="css/aos.css">
-  <link rel="stylesheet" href="css/style.css">
-
-  <title>Enrico Zoia - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrico Zoia - Portfolio</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png">
 </head>
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="100">
-
-  <div class="lines-wrap">
-    <div class="lines-inner">
-      <div class="lines"></div>
+<body>
+    <div class="header">
+        <img src="images\logofull.svg">
+        <nav class="links">
+            <a href="#about" style="margin-right: 15px">ABOUT ME</a>
+            <a href="#graphic" style="margin-right: 15px">GRAPHIC DESIGN</a>
+            <a href="#content" style="margin-right: 15px">CONTENT CREATION</a>
+            <a href="#photo" style="margin-right: 15px">FOTOGRAFIA</a>
+        </nav>
+        <div class="hamburger-menu" id="menu-icon">
+            &#9776;
+        </div>
     </div>
-  </div>
-  <!-- END lines -->
 
-  <div class="site-mobile-menu site-navbar-target">
-    <div class="site-mobile-menu-header">
-      <div class="site-mobile-menu-close">
-        <span class="icofont-close js-menu-toggle"></span>
-      </div>
+    <div class="mobile-menu" id="mobile-menu">
+        <div id="menuLink">
+            <p>
+                <a href="#about" style="margin-right: 15px">ABOUT ME</a><a href="#graphic">GRAPHIC DESIGN</a>
+            </p>
+            <p>
+                <a href="#photo" style="margin-right: 15px">FOTOGRAFIA</a><a href="#content">CONTENT CREATION</a>
+            </p>
+        </div>
     </div>
-    <div class="site-mobile-menu-body"></div>
-  </div>
 
-  <nav class="site-nav dark mb-5 site-navbar-target">
-    <div class="container">
-      <div class="site-navigation class=" all-logo">
-        <a href="index.html"> <img src="images/logofull.svg" style="width:150px"> </a>
-
-        <ul class="js-clone-nav d-none d-lg-inline-none site-menu float-right site-nav-wrap">
-          <li><a href="#home-section" class="nav-link active">Home</a></li>
-          <li><a href="#portfolio-grafica" class="nav-link">Graphic Design</a></li>
-          <li><a href="#portfolio-fotografia" class="nav-link">Fotografia</a></li>
-          <li><a href="#portfolio-online" class="nav-link">Content Creation</a></li>
-          <li><a href="#about-section" class="nav-link">About</a></li>
-          <li><a href="#contact-section" class="nav-link">Contattami</a></li>
-        </ul>
-
-        <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-inline-block"
-          data-toggle="collapse" data-target="#main-navbar">
-          <span></span>
-        </a>
-
-      </div>
+    <div class="intro">
+        <img src="images\profilo.png">
+        <div class="testointro">
+            <h1>Ciao 👋<br>sono <b style="color: #E63946">Enrico</b><br>Un ragazzo che ama <b
+                    style="color: #1e1d3c">grafica</b>, <b style="color: #1e1d3c">fotografia</b> e <b
+                    style="color: #1e1d3c">tecnologia</b></h1>
+        </div>
     </div>
-  </nav>
 
-
-  <div class="untree_co-section pb-0" id="home-section">
-    <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-md-7">
-          <h1 class="heading gsap-reveal-hero mb-3"><strong>Enrico Zoia</strong></h1>
-          <h2 class="subheading gsap-reveal-hero mb-4">
-            Fotografo - Graphic Designer - Content Creator
-          </h2>
+    <section id="about">
+        <h2 class="sottotitolo">Chi Sono</h2>
+        <div class="intabout">
+            <p>Sono Enrico, ho mille passioni e adoro scoprire cose nuove</p>
+            <p>In quest'ottica inizia, nel 2017, il mio <strong>percorso su YouTube</strong> che negli anni mi ha
+                spronato ad informarmi sempre di più sul mondo dell'informatica per poi condividere ciò che scopro con
+                il pubblico. I miei obiettivi sono far conoscere come funziona tutto ciò <i>di tech</i> che ci circonda
+                e spronare la curiosità altrui.</p>
+            <p>Parallelamente a questo, mi entusiasma il mondo della <strong>comunicazione visiva</strong>, percorso di
+                studi che sto frequentando</p>
+            <button class="contatto_button"
+                onClick="document.getElementById('contatto').scrollIntoView()">Contattami</button>
         </div>
-      </div>
+    </section>
 
+    <section id="graphic">
+        <h2 class="sottotitolo">Graphic Design</h2>
+        <p class="sotto-sottotitolo">Clicca sui progetti per scoprire di più!</p>
+        <div class="portfolio">
+            <div class="project-card" onclick="openModal('modal1')">
+                <img src=" images\MB.jpg" class="project-image">
+                <div class="project-info">
+                    <h3 class="project-title">Maria Bambina</h3>
+                    <p class="project-count">LOGOTIPO</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images\pb_0.jpg" class="project-image" onclick="openModal('modal2')">
+                <div class="project-info">
+                    <h3 class="project-title">Personal Branding</h3>
+                    <p class="project-count">LOGOTIPO</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images\Oliv_1.jpg" class="project-image" onclick="openModal('modal3')">
+                <div class="project-info">
+                    <h3 class="project-title">Olivetti</h3>
+                    <p class="project-count">EDITORIA</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images\DM_0.jpg" class="project-image" onclick="openModal('modal4')">
+                <div class="project-info">
+                    <h3 class="project-title">Dolcemilano</h3>
+                    <p class="project-count">LOGOTIPO</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images\Sociosf_0.png" class="project-image" onclick="openModal('modal5')">
+                <div class="project-info">
+                    <h3 class="project-title">La Famiglia al Centro dell'Ambito</h3>
+                    <p class="project-count">LOGOTIPO</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images\GO_0.png" class="project-image" onclick="openModal('modal6')">
+                <div class="project-info">
+                    <h3 class="project-title">Grafica, Ovunque</h3>
+                    <p class="project-count">EDITORIA</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="content">
+        <h2 class="sottotitolo">Content Creation</h2>
+        <div class="portfolio">
+            <div class="project-card">
+                <img src="images\yt.png" class="project-image" onclick="openModal('modal6')">
+                <div class="project-info">
+                    <h3 class="project-title">YouTube</h3>
+                    <p class="project-count">ENRICOTECH</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images\sbs.png" class="project-image" onclick="openModal('modal6')">
+                <div class="project-info">
+                    <h3 class="project-title">Substack</h3>
+                    <p class="project-count">WRITECH</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section id="photo">
+        <h2 class="sottotitolo">Fotografia</h2>
+        <div class="portfolio">
+            <div class="project-card">
+                <img src=" images\ph_26.jpg" class="project-image">
+            </div>
+            <div class="project-card">
+                <img src=" images\ph_1.jpg" class="project-image">
+            </div>
+            <div class="project-card">
+                <img src=" images\ph_4.jpg" class="project-image">
+            </div>
+            <div class="project-card">
+                <img src=" images\ph_6.jpg" class="project-image">
+            </div>
+            <div class="project-card">
+                <img src=" images\ph_7.jpg" class="project-image">
+            </div>
+            <div class="project-card">
+                <img src=" images\ph_12.jpg" class="project-image">
+            </div>
+            <div class="project-card">
+                <img src=" images\ph_13.jpg" class="project-image">
+            </div>
+            <div class="project-card">
+                <img src=" images\ph_15.jpg" class="project-image">
+            </div>
+            <div class="project-card">
+                <img src=" images\ph_11.jpg" class="project-image" onclick="openModal('modal_foto1')">
+            </div>
+            <div class="project-card">
+                <img src=" images\ph_25.jpg" class="project-image">
+            </div>
+            <div class="project-card">
+                <img src=" images\ph_20.jpg" class="project-image">
+            </div>
+            <div class="project-card">
+                <img src=" images\ph_batt_9.jpg" class="project-image" onclick="openModal('modal_foto2')">
+            </div>
+            <div class="project-card">
+                <img src=" images\ph_21.jpg" class="project-image">
+            </div>
+
+        </div>
+    </section>
+
+    <div id="contatto">
+        <h2 class="sottotitolo">Contattami</h2>
+        <div class="contatti">
+            <div class="infocontact">
+                <p>Se vuoi collaborare con me con un <strong style="color: #1e1d3c">video su YouTube</strong> o per un
+                    <strong style="color: #e63946">progetto di Graphic Design</strong> scrivimi a <a
+                        href="mailto:hello@enricozoia.it">hello@enricozoia.it</a> o compila il modulo qui affianco!
+                </p>
+            </div>
+            <div>
+                <form class="form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="4cb3e4d8-e37f-4da0-840a-5029e4c5c095">
+                    <input type="text" name="nome" placeholder="Come ti chiami?"><br>
+                    <input type="email" name="email" placeholder="Qual è la tua mail?" required><br>
+                    <textarea name="messaggio" placeholder="Scrivi qui!" required></textarea><br>
+                    <button type="submit" class="invia_button">Invia!</button>
+                </form>
+            </div>
+        </div>
     </div>
-  </div>
 
 
-  <div class="untree_co-section untree_co-section-4 pb-0" id="portfolio">
+    <div id="modal_foto1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal_foto1')">&times;</span>
+            <div class="gallery-container">
+                <div class="gallery-slides">
+                    <img src="images\ph_11.jpg" class="slide">
+                    <img src="images\ph_10.jpg" class="slide">
+                    <img src="images\ph_9.jpg" class="slide">
+                    <img src="images\ph_24.jpg" class="slide">
+                </div>
+                <!-- Frecce per controllare manualmente -->
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
 
-    <div class="container">
-
-      <div class="relative">
-        <div class="loader-portfolio-wrap">
-          <div class="loader-portfolio"></div>
+                <div class="dots-container">
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
 
-      <div id="portfolio-single-holder"></div>
+    <div id="modal_foto2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal_foto2')">&times;</span>
+            <div class="gallery-container">
+                <div class="gallery-slides">
+                    <img src="images\ph_batt_1.jpg" class="slide">
+                    <img src="images\ph_batt_2.jpg" class="slide">
+                    <img src="images\ph_batt_3.jpg" class="slide">
+                    <img src="images\ph_batt_4.jpg" class="slide">
+                    <img src="images\ph_batt_5.jpg" class="slide">
+                    <img src="images\ph_batt_6.jpg" class="slide">
+                    <img src="images\ph_batt_7.jpg" class="slide">
+                    <img src="images\ph_batt_8.jpg" class="slide">
+                    <img src="images\ph_batt_9.jpg" class="slide">
+                    <img src="images\ph_batt_10.jpg" class="slide">
+                </div>
+                <!-- Frecce per controllare manualmente -->
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
 
-      <div class="portfolio-wrapper" id="portfolio-grafica">
-
-        <h1 class="section-heading gsap-reveal-hero mb-3"><strong>Graphic Design</strong></h1>
-        <div class="wave gsap-reveal-hero">
-          <svg>
-            <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
-          </svg>
+                <div class="dots-container">
+                </div>
+            </div>
         </div>
+    </div>
 
-        <div id="posts" class="row">
-
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="Olivetti.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="2">
-              <div class="overlay">
-                <div class="portfolio-item-content">
-                  <h3>Brochure Olivetti</h3>
-                  <p>Design Editoriale</p>
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <div class="titolomodal">
+                <h2>Maria Bambina</h2>
+                <h3>LOGOTIPO</h3>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-slides">
+                    <img src="images\MB_1.jpg" class="slide">
+                    <img src="images\MB_2.jpg" class="slide">
+                    <img src="images\MB_3.jpg" class="slide">
+                    <img src="images\MB_4.jpg" class="slide">
+                    <img src="images\MB_5.jpg" class="slide">
+                    <img src="images\MB_6.jpg" class="slide">
+                    <img src="images\MB_7.jpg" class="slide">
+                    <img src="images\MB_8.jpg" class="slide">
+                    <img src="images\MB_9.jpg" class="slide">
+                    <img src="images\MB_10.jpg" class="slide">
                 </div>
-              </div>
-              <img src="images/Oliv_1.jpg" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
+                <!-- Frecce per controllare manualmente -->
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
 
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="MariaBambina.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="2">
-              <div class="overlay">
-                <div class="portfolio-item-content">
-                  <h3>Logotipo Maria Bambina</h3>
-                  <p>Brand Identity</p>
+                <div class="dots-container">
                 </div>
-              </div>
-              <img src="images/MB.jpg" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
-
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="DolceMilano.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="2">
-              <div class="overlay">
-                <div class="portfolio-item-content">
-                  <h3>Logotipo DolceMilano</h3>
-                  <p>Brand Identity</p>
-                </div>
-              </div>
-              <img src="images/DM_0.jpg" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
-
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="AltoAdige.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="2">
-              <div class="overlay">
-                <div class="portfolio-item-content">
-                  <h3>Brochure Alto Adige</h3>
-                  <p>Design Editoriale</p>
-                </div>
-              </div>
-              <img src="images/AA_0.jpg" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
-
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="PersonalBranding.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
-              data-id="2">
-              <div class="overlay">
-                <div class="portfolio-item-content">
-                  <h3>Personal Branding</h3>
-                  <p>Brand Identity</p>
-                </div>
-              </div>
-              <img src="images/pb_0.jpg" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
-
+            </div>
+            <div class="descrizmodal">
+                <p class="introdescriz">Realizzazione di un logo per la Scuola dell'Infanzia Paritaria Maria Bambina di
+                    Lissone (MB) nell'ambito di un concorso da loro indetto per rinnovare la propria identità visiva
+                    dopo 100 anni di storia. Il logo da me ideato è stato selezionato come vincitore e utilizzato nei
+                    loro canali comunicativi.</p>
+                <p>Il segno ideato risulta minimale, moderno e adatto ad un contesto infantile mantenendo tuttavia una
+                    nota istituzionale e svariati riferimenti al mondo educativo. Le tre figure rappresentate si
+                    intersecano tra di loro come un puzzle stabilendo le relazioni interpersonali che si creano
+                    nell'ambiente scolastico. I volti sono rappresentati con tre forme diverse per simboleggiare i
+                    diversi giochi usati dai bambini (costruzioni, tangram) ma anche la diversità e l'unicità di ogni
+                    individuo.</p>
+            </div>
         </div>
-        <div class="portfolio-wrapper1" id="portfolio-fotografia">
+    </div>
 
-          <h1 class="section-heading gsap-reveal-hero mb-3" class="titolo-portfolio"><strong>Fotografia</strong></h1>
-          <div class="wave gsap-reveal-hero">
-            <svg>
-              <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
-            </svg>
-          </div>
 
-          <div id="posts" class="row">
-
-            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-              <a class="portfolio-item isotope-item gsap-reveal-img" data-id="1">
-                <div class="overlay">
-                  <div class="portfolio-item-content">
-                    <h3>Tram 1886</h3>
-                    <p>Milano</p>
-                  </div>
-                </div>
-                <img src="images/ph_26.jpg" class="lazyload  img-fluid" alt="Images" />
-              </a>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <div class="titolomodal">
+                <h2>Personal Branding</h2>
+                <h3>LOGOTIPO</h3>
             </div>
-
-            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-              <a class="portfolio-item isotope-item gsap-reveal-img" data-id="2">
-                <div class="overlay">
-                  <div class="portfolio-item-content">
-                    <h3>Torre Generali</h3>
-                    <p>Milano CityLife</p>
-                  </div>
+            <div class="gallery-container">
+                <div class="gallery-slides">
+                    <img src="images\pb_0.jpg" class="slide">
+                    <img src="images\pb_1.jpg" class="slide">
+                    <img src="images\pb_2.jpg" class="slide">
+                    <img src="images\pb_3.jpg" class="slide">
+                    <img src="images\pb_4.jpg" class="slide">
                 </div>
-                <img src="images/ph_12.jpg" class="lazyload  img-fluid" alt="Images" />
-              </a>
-            </div>
+                <!-- Frecce per controllare manualmente -->
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
 
-            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-              <a class="portfolio-item isotope-item gsap-reveal-img" data-id="2">
-                <div class="overlay">
-                  <div class="portfolio-item-content">
-                    <h3>Pfarrkirche Trafoi</h3>
-                    <p>Alto Adige</p>
-                  </div>
+                <div class="dots-container">
                 </div>
-                <img src="images/ph_7.jpg" class="lazyload  img-fluid" alt="Images" />
-              </a>
             </div>
-
-            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-              <a class="portfolio-item isotope-item gsap-reveal-img" data-id="2">
-                <div class="overlay">
-                  <div class="portfolio-item-content">
-                    <h3>Centro Storico e Adige</h3>
-                    <p>Verona</p>
-                  </div>
-                </div>
-                <img src="images/ph_4.jpg" class="lazyload  img-fluid" alt="Images" />
-              </a>
+            <div class="descrizmodal">
+                <p>aaa</p>
+                <p>aaa</p>
             </div>
-
-            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-              <a class="portfolio-item isotope-item gsap-reveal-img" data-id="2">
-                <div class="overlay">
-                  <div class="portfolio-item-content">
-                    <h3>Lago Misurina</h3>
-                    <p>Auronzo Cadore (BL)</p>
-                  </div>
-                </div>
-                <img src="images/ph_15.jpg" class="lazyload  img-fluid" alt="Images" />
-              </a>
-            </div>
-
-            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-              <a class="portfolio-item isotope-item gsap-reveal-img" data-id="2">
-                <div class="overlay">
-                  <div class="portfolio-item-content">
-                    <h3>Valle dei Templi</h3>
-                    <p>Agrigento</p>
-                  </div>
-                </div>
-                <img src="images/ph_6.jpg" class="lazyload  img-fluid" alt="Images" />
-              </a>
-            </div>
-
-            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-              <a class="portfolio-item isotope-item gsap-reveal-img" data-id="2">
-                <div class="overlay">
-                  <div class="portfolio-item-content">
-                    <h3>Borghetto sul Mincio</h3>
-                    <p>Verona</p>
-                  </div>
-                </div>
-                <img src="images/ph_13.jpg" class="lazyload  img-fluid" alt="Images" />
-              </a>
-            </div>
-
-            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-              <a class="portfolio-item isotope-item gsap-reveal-img" data-id="2">
-                <div class="overlay">
-                  <div class="portfolio-item-content">
-                    <h3>Basilica di San Pietro</h3>
-                    <p>Città del Vaticano</p>
-                  </div>
-                </div>
-                <img src="images/ph_18.jpg" class="lazyload  img-fluid" alt="Images" />
-              </a>
-            </div>
-
-            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-              <a class="portfolio-item isotope-item gsap-reveal-img" data-id="2">
-                <div class="overlay">
-                  <div class="portfolio-item-content">
-                    <h3>Gradara</h3>
-                    <p>Pesaro-Urbino, Marche</p>
-                  </div>
-                </div>
-                <img src="images/ph_29.png" class="lazyload  img-fluid" alt="Images" />
-              </a>
-            </div>
-
-            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-              <a class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" href="SullaBattigia.html"data-id="2" >
-                <div class="overlay">
-                  <div class="portfolio-item-content">
-                    <h3>Sulla Battiglia</h3>
-                    <p>Giulianova - Progetto Fotografico</p>
-                  </div>
-                </div>
-                <img src="images/ph_batt_6.jpg" class="lazyload  img-fluid" alt="Images" />
-              </a>
-            </div>
-
-
-            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-              <a class="portfolio-item isotope-item gsap-reveal-img" data-id="2">
-                <div class="overlay">
-                  <div class="portfolio-item-content">
-                    <h3>Borgo Parrini</h3>
-                    <p>Palermo</p>
-                  </div>
-                </div>
-                <img src="images/ph_1.jpg" class="lazyload  img-fluid" alt="Images" />
-              </a>
-            </div>
-
-            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-              <a class="portfolio-item isotope-item gsap-reveal-img" data-id="2">
-                <div class="overlay">
-                  <div class="portfolio-item-content">
-                    <h3>Città Fantasma di Consonno</h3>
-                    <p>Lecco</p>
-                  </div>
-                </div>
-                <img src="images/ph_8.jpg" class="lazyload  img-fluid" alt="Images" />
-              </a>
-            </div>
-
-            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-              <a class="portfolio-item isotope-item gsap-reveal-img" data-id="2">
-                <div class="overlay">
-                  <div class="portfolio-item-content">
-                    <h3>Street Photography</h3>
-                    <p>Verona</p>
-                  </div>
-                </div>
-                <img src="images/ph_3.jpg" class="lazyload  img-fluid" alt="Images" />
-              </a>
-            </div>
-
-            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-              <a class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" href="AlpeSiusi.html" data-id="2">
-                <div class="overlay">
-                  <div class="portfolio-item-content">
-                    <h3>Alpe di Siusi</h3>
-                    <p>Alto Adige</p>
-                  </div>
-                </div>
-                <img src="images/ph_24.jpg" class="lazyload  img-fluid" alt="Images" />
-              </a>
-            </div>
-
-            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-              <a class="portfolio-item isotope-item gsap-reveal-img" data-id="2">
-                <div class="overlay">
-                  <div class="portfolio-item-content">
-                    <h3>Coloris</h3>
-                    <p>Milano CityLife</p>
-                  </div>
-                </div>
-                <img src="images/ph_25.jpg" class="lazyload  img-fluid" alt="Images" />
-              </a>
-            </div>
-
-            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-              <a class="portfolio-item isotope-item gsap-reveal-img" data-id="2">
-                <div class="overlay">
-                  <div class="portfolio-item-content">
-                    <h3>Rocca di Gradara</h3>
-                    <p>Pesaro-Urbino, Marche</p>
-                  </div>
-                </div>
-                <img src="images/ph_28.jpg" class="lazyload  img-fluid" alt="Images" />
-              </a>
-            </div>
-
-            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-              <a class="portfolio-item isotope-item gsap-reveal-img" data-id="2">
-                <div class="overlay">
-                  <div class="portfolio-item-content">
-                    <h3>Boschetto dei Cipressi</h3>
-                    <p>Val d'Orcia</p>
-                  </div>
-                </div>
-                <img src="images/ph_23.jpg" class="lazyload  img-fluid" alt="Images" />
-              </a>
-            </div>
-
-            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-              <a class="portfolio-item isotope-item gsap-reveal-img" data-id="2">
-                <div class="overlay">
-                  <div class="portfolio-item-content">
-                    <h3>Sestri Levante</h3>
-                    <p>Liguria</p>
-                  </div>
-                </div>
-                <img src="images/ph_5.jpg" class="lazyload  img-fluid" alt="Images" />
-              </a>
-            </div>
-
-
-          </div>
         </div>
-      </div>
+    </div>
 
-      <div class="portfolio-wrapper" id="portfolio-online">
-
-        <h1 class="section-heading gsap-reveal-hero mb-3"><strong>Content Creation</strong></h1>
-        <div class="wave gsap-reveal-hero">
-          <svg>
-            <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
-          </svg>
-        </div>
-
-        <div id="posts" class="row">
-
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="YouTube.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="1">
-              <div class="overlay">
-                <div class="portfolio-item-content">
-                  <h3>YouTube</h3>
-                  <p>Piattaforma principale</p>
-                </div>
-              </div>
-              <img src="images/youtube2.png" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
-
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="Telegram.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="2">
-              <div class="overlay">
-                <div class="portfolio-item-content">
-                  <h3>Telegram</h3>
-                  <p>News e Aggiornamenti</p>
-                </div>
-              </div>
-              <img src="images/telegram2.png" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
-
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="Substack.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="2">
-              <div class="overlay">
-                <div class="portfolio-item-content">
-                  <h3>Substack</h3>
-                  <p>Riflessioni e Approfondimenti</p>
-                </div>
-              </div>
-              <img src="images/substack2.png" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
-
-        </div>
-      </div>
-
-
-      <div class="untree_co-section pb-0" id="about-section">
-        <div class="container">
-          <div class="row justify-content-center mb-3">
-            <div class="col-lg-7 mx-auto text-center author-wrap">
-              <img src="images/fotoprofilo.png" alt="Image" class="img-fluid rounded-circle mb-3"
-                style="max-width: 40%;">
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <div class="titolomodal">
+                <h2>Brochure Olivetti</h2>
+                <h3>EDITORIA</h3>
             </div>
-          </div>
+            <div class="gallery-container">
+                <div class="gallery-slides">
+                    <img src="images\Oliv_2.jpg" class="slide">
+                    <img src="images\Oliv_3.jpg" class="slide" </div>
+                    <!-- Frecce per controllare manualmente -->
+                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
 
-          <div class="row justify-content-center">
-            <div class="col-lg-7">
-              <p class="gsap-reveal-hero">Sono Enrico, un ragazzo di 17 anni appassionato di grafica, tecnologia e
-                fotografia.</p>
-
-              <p class="gsap-reveal-hero">Sono molto curioso; adoro scoprire nuove informazioni e condividerle, <i>attraverso il mio
-                  progetto divulgativo online (YouTube, Telegram, Substack)</i>, con gli altri al fine di stimolare ulteriormente la curiosità
-                collettiva e aumentare la conoscenza soprattutto sui temi che più mi stanno a cuore, ad esempio le
-                telecomunicazioni.</p>
+                    <div class="dots-container">
+                    </div>
+                </div>
             </div>
-
-          </div>
         </div>
-      </div>
+    </div>
 
-
-      <div class="untree_co-section" id="contact-section">
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-lg-7 text-center mx-auto">
-              <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Contattami</strong></h2>
-              <p class="gsap-reveal-hero">Se vuoi avere qualsiasi informazione o collaborare con me, utilizza questo
-                form!
-              </p>
-              <div class="wave gsap-reveal-hero">
-                <svg>
-                  <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
-                </svg>
-              </div>
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <div class="titolomodal">
+                <h2>DolceMilano</h2>
+                <h3>LOGOTIPO</h3>
             </div>
-          </div>
+            <div class="gallery-container">
+                <div class="gallery-slides">
+                    <img src="images\DM_1.jpg" class="slide">
+                    <img src="images\DM_2.jpg" class="slide">
+                    <img src="images\DM_3.jpg" class="slide">
+                    <img src="images\DM_4.jpg" class="slide">
+                    <img src="images\DM_5.jpg" class="slide">
+                    <img src="images\DM_6.jpg" class="slide">
+                    <img src="images\DM_7.jpg" class="slide">
+                    <img src="images\DM_8.jpg" class="slide">
+                    <img src="images\DM_9.jpg" class="slide">
+                    <img src="images\DM_10.jpg" class="slide">
+                    <img src="images\DM_11.jpg" class="slide">
+                </div>
+                <!-- Frecce per controllare manualmente -->
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
 
-          <div class="row">
-            <div class="col-lg-6">
-              <form action="https://formspree.io/f/xwkgdawd" method="POST">
-                <div class="row">
-                  <div class="col-lg-6 form-group">
-                    <input type="text" class="form-control" placeholder="Nome" name="Nome" required>
-                  </div>
+                <div class="dots-container">
                 </div>
-                <div class="row">
-                  <div class="col-lg-12 form-group">
-                    <input type="text" class="form-control" placeholder="Email o Contatto telegram" name="Contatto"
-                      required>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-12 form-group">
-                    <textarea name="Messaggio" id="" cols="30" rows="7" class="form-control"
-                      placeholder="Messaggio"></textarea>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-12 form-group">
-                    <input type="submit" class="btn btn-black" value="Invia!">
-                  </div>
-                </div>
-              </form>
             </div>
-          </div>
+            <div class="descrizmodal">
+                <p class="introdescriz">Realizzazione di un logotipo con relativa immagine coordinate per un'ipotetica
+                    pasticceria di alto livello con 3 punti vendita nel centro di Milano.</p>
+                <p>Il segno ideato rappresenta un croissant, prodotto di punta della pasticceria, che grazie alla
+                    disposizione verticale rimanda alla lettera D. Per il naming è stato scelto un font serif molto
+                    caratterizzante con aste modulate e curve morbide mentre per il payoff un sans serif estremamente
+                    lineare e con elevata spaziatura; insieme conferiscono al logo eleganza ma anche un tocco di
+                    dinamismo grazie al contrasto cromatico tra "Dolce" e "Milano". La palette colori riprende quella di
+                    un croissant ed è stata declinata in varie tonalità di beige/marroncino per mantenere una coerenza
+                    visiva ma allo stesso tempo un buon contrasto e flessibilità di applicazioni.</p>
+            </div>
         </div>
-      </div>
+    </div>
 
-      <div class="row mt-5">
-        <div class="col-12 text-center">
-          <p class=" mb-0">&copy; 2024 - All rights reserved</p>
-          <p class=" mb-0">La condivisione dei contenuti qui presenti è ammessa solamente attraverso il link al sito e
-            in ogni caso citando l'autore.</p>
-          <p class="">Template by <a href="https://untree.co/" target="_blank" class=""><strong>Untree.co</strong></a>
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <div class="titolomodal">
+                <h2>La Famiglia al Centro dell'Ambito</h2>
+                <h3>LOGOTIPO</h3>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-slides">
+                    <img src="images\Sociosf_01.png" class="slide">
+                    <img src="images\Sociosf_02.png" class="slide">
+                    <img src="images\Sociosf_03.png" class="slide">
+                    <img src="images\Sociosf_04.png" class="slide">
+                    <img src="images\Sociosf_05.png" class="slide">
+                    <img src="images\Sociosf_06.png" class="slide">
+                    <img src="images\Sociosf_07.png" class="slide">
+                    <img src="images\Sociosf_08.png" class="slide">
+                </div>
+                <!-- Frecce per controllare manualmente -->
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+                <div class="dots-container">
+                </div>
+            </div>
+            <div class="descrizmodal">
+                <p>Realizzazione di un logotipo per il progetto "La Famiglia al Centro dell'Ambito". Concorso indetto da
+                    Sociosfera ONLUS di Seregno (MB) e nel quale questo progetto ha ottenuto una menzione speciale.</p>
+                <p>Il logo ideato riesce a comunicare al meglio i valori del progetto: la tipografia e la palette colori
+                    si adattano ad un contesto abitato da bambini mentre la linea continua di cui è composto il segno
+                    rafforza la centralità delle famiglie in questo progetto. La forma del segno riprende i confini
+                    della città di Seregno, andando quindi a rafforzare il legame con il territorio. <br> </p>
+            </div>
         </div>
-      </div>
+    </div>
 
-      <div id="overlayer"></div>
-      <div class="loader">
-        <div class="spinner-border" role="status">
-          <span class="sr-only">Loading...</span>
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <div class="titolomodal">
+                <h2>Grafica, Ovunque - Il Graphic Design Spiegato Semplice</h2>
+                <h3>EDITORIA</h3>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-slides">
+                    <img src="images\GO_01.png" class="slide">
+                </div>
+                <!-- Frecce per controllare manualmente -->
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                <div class="dots-container">
+                </div>
+            </div>
+            <div class="descrizmodal">
+                <p>aaa</p>
+                <p>aaa</p>
+            </div>
         </div>
-      </div>
+    </div>
 
-      <script src="js/jquery-3.4.1.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/owl.carousel.min.js"></script>
-      <script src="js/jquery.animateNumber.min.js"></script>
-      <script src="js/jquery.waypoints.min.js"></script>
-      <script src="js/jquery.fancybox.min.js"></script>
-      <script src="js/aos.js"></script>
-      <script src="js/wave-animate.js"></script>
-      <script src="js/circle-progress.js"></script>
-      <script src="js/imagesloaded.pkgd.js"></script>
-      <script src="js/isotope.pkgd.min.js"></script>
-      <script src="js/jquery.easing.1.3.js"></script>
-      <script src="js/TweenMax.min.js"></script>
-      <script src="js/ScrollMagic.min.js"></script>
-      <script src="js/scrollmagic.animation.gsap.min.js"></script>
+    <script>
+        var modalaperto
+        const menuIcon = document.getElementById('menu-icon');
+        const menuLink = document.getElementById('menuLink');
+        const mobileMenu = document.getElementById('mobile-menu');
 
-      <script src="js/custom.js"></script>
+        menuIcon.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+        });
+
+        menuLink.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+        });
+
+        document.addEventListener('click', closeMenuOnClickOutside);
+
+        function closeMenuOnClickOutside(event) {
+            var menu = document.getElementById('mobile-menu');
+            var menuIcon = document.getElementById('menu-icon');
+
+            if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
+                menu.classList.remove('open');
+            }
+        }
+
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "flex";
+            modalaperto = modalId
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+            modalaperto = ""
+        }
+
+        document.addEventListener('keydown', function (event) {
+            if (event.key === "Escape") {
+                if (modalaperto) {
+                    document.getElementById(modalaperto).style.display = "none";
+                    modalaperto = ""
+                }
+            }
+        });
+
+
+        let slideIndex = {}; // Memorizza l'indice della slide per ogni modal
+        let autoSlideIntervals = {}; // Memorizza l'intervallo per ogni modal
+
+        // Funzione per inizializzare le gallerie
+        function initGalleries() {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                const gallerySlides = modal.querySelectorAll('.gallery-slides .slide');
+                const dotsContainer = modal.querySelector('.dots-container');
+                const modalId = modal.getAttribute('id');
+
+                // Inizializza slideIndex e crea i pallini per ogni galleria
+                slideIndex[modalId] = 0;
+                createDots(gallerySlides.length, dotsContainer, modalId);
+
+                // Imposta l'intervallo di scorrimento automatico per ciascun modal
+                autoSlideIntervals[modalId] = setInterval(() => {
+                    showSlides(modalId, 1);
+                }, 3000);
+
+                // Mostra la prima immagine inizialmente
+                updateSlidePosition(modalId);
+            });
+        }
+
+        // Funzione per creare i pallini per ogni galleria
+        function createDots(totalSlides, dotsContainer, modalId) {
+            for (let i = 0; i < totalSlides; i++) {
+                let dot = document.createElement('span');
+                dot.classList.add('dot');
+                dot.setAttribute('onclick', `currentSlide(${i + 1}, '${modalId}')`);
+                dotsContainer.appendChild(dot);
+            }
+        }
+
+        // Funzione per scorrere automaticamente o manualmente
+        function showSlides(modalId, n) {
+            slideIndex[modalId] += n;
+            const gallerySlides = document.querySelector(`#${modalId} .gallery-slides`);
+            const totalSlides = gallerySlides.children.length;
+
+            if (slideIndex[modalId] >= totalSlides) {
+                slideIndex[modalId] = 0;
+            } else if (slideIndex[modalId] < 0) {
+                slideIndex[modalId] = totalSlides - 1;
+            }
+
+            updateSlidePosition(modalId);
+        }
+
+        // Funzione per cambiare slide manualmente
+        function changeSlide(n, modalId) {
+            clearInterval(autoSlideIntervals[modalId]); // Ferma lo scorrimento automatico quando si clicca
+            showSlides(modalId, n);
+        }
+
+        // Funzione per andare direttamente a una slide
+        function currentSlide(n, modalId) {
+            clearInterval(autoSlideIntervals[modalId]); // Ferma lo scorrimento automatico
+            slideIndex[modalId] = n - 1;
+            updateSlidePosition(modalId);
+        }
+
+        // Funzione per aggiornare la posizione delle slide e i pallini
+        function updateSlidePosition(modalId) {
+            const gallerySlides = document.querySelector(`#${modalId} .gallery-slides`);
+            const offset = -slideIndex[modalId] * 100;
+            gallerySlides.style.transform = `translateX(${offset}%)`;
+
+            const dots = document.querySelectorAll(`#${modalId} .dot`);
+            dots.forEach(dot => {
+                dot.classList.remove('active');
+            });
+            dots[slideIndex[modalId]].classList.add('active');
+        }
+
+        // Inizializza le gallerie al caricamento della pagina
+        document.addEventListener("DOMContentLoaded", initGalleries);
+
+
+
+    </script>
 
 </body>
 
