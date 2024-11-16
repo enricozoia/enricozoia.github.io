@@ -296,9 +296,8 @@ body {
 }
 
 .close {
-    position: fixed;
-    margin-left: 78%;
-    color: #aaa;
+float: right;
+color: #aaa;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
@@ -477,6 +476,9 @@ body {
 
     .hamburger-menu {
         display: block;
+    }
+    .modal {
+        width: 100vw;
     }
     .titolomodal {
         margin: 20px 0 15px 15px;
