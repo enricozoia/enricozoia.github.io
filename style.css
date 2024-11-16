@@ -4,7 +4,6 @@ html {
 body {
     background-color: #F1FAEE;
     margin: 0;
-    padding: 0 0 100px 0;
     font-family: Neulis Sans, sans-serif;
     font-weight: 100;
 }
@@ -410,7 +409,14 @@ color: #aaa;
     font-size: 25px;
 }
 
-
+.footer {
+    background-color: #ccf1c0;
+    margin-top: 75px;
+    padding: 25px;
+}
+.footer nav {
+    justify-content: center;
+}
 
 /* Responsive Styles */
 
