@@ -460,6 +460,12 @@ color: #aaa;
 
 
 @media screen and (max-width: 740px) {
+    .form input {
+        width: 250px;
+    }
+    .form textarea {
+        width: 250px;
+    }
     .form {
         width: 700px;
     }
