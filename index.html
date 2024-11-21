@@ -164,7 +164,7 @@
                 <img src=" images\ph_15.jpg" class="project-image">
             </div>
             <div class="project-card">
-                <img src=" images\ph_11.jpg" class="project-image" onclick="openModal('modal_foto1')">
+                <img src=" images\ph_11.jpg" class="project-image" onclick="openModal('modalfoto1')">
             </div>
             <div class="project-card">
                 <img src=" images\ph_25.jpg" class="project-image">
@@ -173,7 +173,7 @@
                 <img src=" images\ph_20.jpg" class="project-image">
             </div>
             <div class="project-card">
-                <img src=" images\ph_batt_9.jpg" class="project-image" onclick="openModal('modal_foto2')">
+                <img src=" images\ph_batt_9.jpg" class="project-image" onclick="openModal('modalfoto2')">
             </div>
             <div class="project-card">
                 <img src=" images\ph_21.jpg" class="project-image">
@@ -211,13 +211,15 @@
             <a href="#photo" style="margin-right: 15px">FOTOGRAFIA</a>
             <a href="#contatto" style="margin-right: 15px">CONTATTI</a>
         </nav>
-        <p style="text-align: center; margin: 15px 0 0 0">Il sito è ancora in fase di sviluppo, potrebbero quindi esserci dei refusi o problemi sia nei contenuti che nella struttura. Nel caso troviate qualche bug vi invito a segnalarmelo :)</p>
+        <p style="text-align: center; margin: 15px 0 0 0">Il sito è ancora in fase di sviluppo, potrebbero quindi
+            esserci dei refusi o problemi sia nei contenuti che nella struttura. Nel caso troviate qualche bug vi invito
+            a segnalarmelo :)</p>
     </div>
 
 
-    <div id="modal_foto1" class="modal">
+    <div id="modalfoto1" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('modal_foto1')">&times;</span>
+            <span class="close" onclick="closeModal('modalfoto1')">&times;</span>
             <div class="gallery-container">
                 <div class="gallery-slides">
                     <img src="images\ph_11.jpg" class="slide">
@@ -226,8 +228,8 @@
                     <img src="images\ph_24.jpg" class="slide">
                 </div>
                 <!-- Frecce per controllare manualmente -->
-                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                <a class="prev" onclick="changeSlide(-1, 'modalfoto1')">&#10094;</a>
+                <a class="next" onclick="changeSlide(1, 'modalfoto1')">&#10095;</a>
 
                 <div class="dots-container">
                 </div>
@@ -235,9 +237,9 @@
         </div>
     </div>
 
-    <div id="modal_foto2" class="modal">
+    <div id="modalfoto2" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('modal_foto2')">&times;</span>
+            <span class="close" onclick="closeModal('modalfoto2')">&times;</span>
             <div class="gallery-container">
                 <div class="gallery-slides">
                     <img src="images\ph_batt_1.jpg" class="slide">
@@ -252,8 +254,8 @@
                     <img src="images\ph_batt_10.jpg" class="slide">
                 </div>
                 <!-- Frecce per controllare manualmente -->
-                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                <a class="prev" onclick="changeSlide(-1, 'modalfoto2')">&#10094;</a>
+                <a class="next" onclick="changeSlide(1, 'modalfoto2')">&#10095;</a>
 
                 <div class="dots-container">
                 </div>
@@ -284,8 +286,8 @@
                     <img src="images\MB_12.jpg" class="slide">
                 </div>
                 <!-- Frecce per controllare manualmente -->
-                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                <a class="prev" onclick="changeSlide(-1, 'modal1')">&#10094;</a>
+                <a class="next" onclick="changeSlide(1, 'modal1')">&#10095;</a>
 
                 <div class="dots-container">
                 </div>
@@ -322,8 +324,8 @@
                     <img src="images\pb_4.jpg" class="slide">
                 </div>
                 <!-- Frecce per controllare manualmente -->
-                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                <a class="prev" onclick="changeSlide(-1, 'modal2')">&#10094;</a>
+                <a class="next" onclick="changeSlide(1, 'modal2')">&#10095;</a>
 
                 <div class="dots-container">
                 </div>
@@ -345,16 +347,17 @@
             <div class="gallery-container">
                 <div class="gallery-slides">
                     <img src="images\Oliv_2.jpg" class="slide">
-                    <img src="images\Oliv_3.jpg" class="slide" </div>
-                    <!-- Frecce per controllare manualmente -->
-                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                    <img src="images\Oliv_3.jpg" class="slide">
+                </div>
+                <!-- Frecce per controllare manualmente -->
+                <a class="prev" onclick="changeSlide(-1, 'modal3')">&#10094;</a>
+                <a class="next" onclick="changeSlide(1, 'modal3')">&#10095;</a>
 
-                    <div class="dots-container">
-                    </div>
+                <div class="dots-container">
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <div id="modal4" class="modal">
@@ -373,14 +376,14 @@
                     <img src="images\DM_5.jpg" class="slide">
                     <img src="images\DM_6.jpg" class="slide">
                     <img src="images\DM_7.jpg" class="slide">
-                    <img src="images\DM_8.jpg" class="slide">
+                    <img src="images\DM_8.png" class="slide">
                     <img src="images\DM_9.jpg" class="slide">
                     <img src="images\DM_10.jpg" class="slide">
                     <img src="images\DM_11.jpg" class="slide">
                 </div>
                 <!-- Frecce per controllare manualmente -->
-                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                <a class="prev" onclick="changeSlide(-1, 'modal4')">&#10094;</a>
+                <a class="next" onclick="changeSlide(1, 'modal4')">&#10095;</a>
 
                 <div class="dots-container">
                 </div>
@@ -418,8 +421,8 @@
                     <img src="images\Sociosf_08.png" class="slide">
                 </div>
                 <!-- Frecce per controllare manualmente -->
-                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                <a class="prev" onclick="changeSlide(-1, 'modal5')">&#10094;</a>
+                <a class="next" onclick="changeSlide(1, 'modal5')">&#10095;</a>
 
                 <div class="dots-container">
                 </div>
@@ -448,14 +451,26 @@
                     <img src="images\GO_02.png" class="slide">
                 </div>
                 <!-- Frecce per controllare manualmente -->
-                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                <a class="prev" onclick="changeSlide(-1, 'modal6')">&#10094;</a>
+                <a class="next" onclick="changeSlide(1, 'modal6')">&#10095;</a>
                 <div class="dots-container">
                 </div>
             </div>
             <div class="descrizmodal">
-                <p>Un giorno, durante lo studio dei colori PANTONE, mi resi conto che dietro al brand e agli iconici colori che tutti siamo abituati a vedere su vari gadget c'è un enorme mondo legato alla grafica e alla stampa. Da qui nasce l'idea di <strong>scrivere un libro</strong> nel quale raccontare ciò di cui usufruiamo quotidianamente dal punto di vista del graphic design, spiegando quindi cosa c'è dietro a oggetti apparentemente banali. <br> Ad esempio: come mai i fogli A4 hanno quelle specifiche dimensioni? In cosa si differenziano le decine di font presenti su Word? Quali meccanismi di percezione visiva entrano in atto durante la visione di un quadro? <br> L'obiettivo del libro è quindi arricchire la cultura personale del lettore su tematiche considerate di nicchia ma che riguardano tutti noi e, se spiegate semplice, possono appassionare chiunque.</p>
-                <p>Mi sono dedicato interamente al libro, curandone la scrittura vera e propria e l'impaginazione. È stato suddiviso in 6 macrocategorie, tra le quali ho deciso di inserire degli intermezzi dedicati a grandi designer prevalentemente italiani dello scorso secolo per arricchire la cultura storica del lettore e far conoscere la storia dietro a loghi e poster tutt'ora diffusi. <br> ➡️ È possibile acquistarlo su <a href="https://amzn.to/3ZdjGpb">Amazon</a></p>
+                <p>Un giorno, durante lo studio dei colori PANTONE, mi resi conto che dietro al brand e agli iconici
+                    colori che tutti siamo abituati a vedere su vari gadget c'è un enorme mondo legato alla grafica e
+                    alla stampa. Da qui nasce l'idea di <strong>scrivere un libro</strong> nel quale raccontare ciò di
+                    cui usufruiamo quotidianamente dal punto di vista del graphic design, spiegando quindi cosa c'è
+                    dietro a oggetti apparentemente banali. <br> Ad esempio: come mai i fogli A4 hanno quelle specifiche
+                    dimensioni? In cosa si differenziano le decine di font presenti su Word? Quali meccanismi di
+                    percezione visiva entrano in atto durante la visione di un quadro? <br> L'obiettivo del libro è
+                    quindi arricchire la cultura personale del lettore su tematiche considerate di nicchia ma che
+                    riguardano tutti noi e, se spiegate semplice, possono appassionare chiunque.</p>
+                <p>Mi sono dedicato interamente al libro, curandone la scrittura vera e propria e l'impaginazione. È
+                    stato suddiviso in 6 macrocategorie, tra le quali ho deciso di inserire degli intermezzi dedicati a
+                    grandi designer prevalentemente italiani dello scorso secolo per arricchire la cultura storica del
+                    lettore e far conoscere la storia dietro a loghi e poster tutt'ora diffusi. <br> ➡️ È possibile
+                    acquistarlo su <a href="https://amzn.to/3ZdjGpb">Amazon</a></p>
             </div>
         </div>
     </div>
@@ -477,13 +492,16 @@
                     <img src="images\Camugnano_6.jpg" class="slide">
                 </div>
                 <!-- Frecce per controllare manualmente -->
-                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                <a class="prev" onclick="changeSlide(-1, 'modal9')">&#10094;</a>
+                <a class="next" onclick="changeSlide(1, 'modal9')">&#10095;</a>
                 <div class="dots-container">
                 </div>
             </div>
             <div class="descrizmodal">
-                <p>Partecipazione al concorso indetto dal Comune di Camugnano in collaborazione con IT.A.CA e Associazione YODA per la realizzazione di una mappa della comunità. Una rappresentazione del territorio del borgo non solo geografica ma anche storica e culturale mediante l'illustrazione e la narrazione delle peculiarità del piccolo paese emiliano.</p>
+                <p>Partecipazione al concorso indetto dal Comune di Camugnano in collaborazione con IT.A.CA e
+                    Associazione YODA per la realizzazione di una mappa della comunità. Una rappresentazione del
+                    territorio del borgo non solo geografica ma anche storica e culturale mediante l'illustrazione e la
+                    narrazione delle peculiarità del piccolo paese emiliano.</p>
                 <p></p>
             </div>
         </div>
@@ -503,8 +521,8 @@
                     <img src="images\substack2.png" class="slide">
                 </div>
                 <!-- Frecce per controllare manualmente -->
-                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                <a class="prev" onclick="changeSlide(-1, 'modal7')">&#10094;</a>
+                <a class="next" onclick="changeSlide(1, 'modal7')">&#10095;</a>
                 <div class="dots-container">
                 </div>
             </div>
@@ -530,16 +548,23 @@
             </div>
             <div class="gallery-container">
                 <div class="gallery-slides">
-
+                    <img src="images\substack1.png" class="slide">
                 </div>
                 <!-- Frecce per controllare manualmente -->
-                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                <a class="prev" onclick="changeSlide(-1, 'modal8')">&#10094;</a>
+                <a class="next" onclick="changeSlide(1, 'modal8')">&#10095;</a>
                 <div class="dots-container">
                 </div>
             </div>
             <div class="descrizmodal">
-                <p>Il mio percorso su questa fantastica piattaforma inizia nel 2017 con l'intento di condividere la mia passione per il mondo della tecnologia, in particolare l'elettronica di consumo. Negli anni lo stile comunicativo e i temi che tratto si sono evoluti fino ad arrivare a un forte focus sulle telecomunicazioni e sull'obiettivo di far conoscere al pubblico in modo semplice il funzionamento di tutto ciò che ci circonda.<br>Dalla registrazione al montaggio, dalla comunicazione allo studio degli argomenti, sono sempre stato autodidatta; la forte passione per questi temi mi ha spinto ad informarmi sempre di più su di essi e sulle strategie di comunicazione arricchendo così il mio bagaglio culturale. <br>➡️<a href="https://youtube.com/enricotech">Vai su YouTube</a></p>
+                <p>Il mio percorso su questa fantastica piattaforma inizia nel 2017 con l'intento di condividere la mia
+                    passione per il mondo della tecnologia, in particolare l'elettronica di consumo. Negli anni lo stile
+                    comunicativo e i temi che tratto si sono evoluti fino ad arrivare a un forte focus sulle
+                    telecomunicazioni e sull'obiettivo di far conoscere al pubblico in modo semplice il funzionamento di
+                    tutto ciò che ci circonda.<br>Dalla registrazione al montaggio, dalla comunicazione allo studio
+                    degli argomenti, sono sempre stato autodidatta; la forte passione per questi temi mi ha spinto ad
+                    informarmi sempre di più su di essi e sulle strategie di comunicazione arricchendo così il mio
+                    bagaglio culturale. <br>➡️<a href="https://youtube.com/enricotech">Vai su YouTube</a></p>
             </div>
         </div>
     </div>
@@ -606,7 +631,7 @@
 
                 // Imposta l'intervallo di scorrimento automatico per ciascun modal
                 autoSlideIntervals[modalId] = setInterval(() => {
-                    showSlides(modalId, 1);
+                    showSlides(1, modalId);
                 }, 3000);
 
                 // Mostra la prima immagine inizialmente
@@ -624,10 +649,19 @@
             }
         }
 
+        // Funzione per cambiare slide manualmente
+        function changeSlide(n, modalId) {
+            clearInterval(autoSlideIntervals[modalId]); // Ferma lo scorrimento automatico quando si clicca
+            showSlides(n, modalId);
+        }
+
         // Funzione per scorrere automaticamente o manualmente
-        function showSlides(modalId, n) {
+        function showSlides(n, modalId) {
+            if (!slideIndex[modalId]) slideIndex[modalId] = 0; // Assicurati che slideIndex sia inizializzato
             slideIndex[modalId] += n;
+
             const gallerySlides = document.querySelector(`#${modalId} .gallery-slides`);
+
             const totalSlides = gallerySlides.children.length;
 
             if (slideIndex[modalId] >= totalSlides) {
@@ -637,12 +671,6 @@
             }
 
             updateSlidePosition(modalId);
-        }
-
-        // Funzione per cambiare slide manualmente
-        function changeSlide(n, modalId) {
-            clearInterval(autoSlideIntervals[modalId]); // Ferma lo scorrimento automatico quando si clicca
-            showSlides(modalId, n);
         }
 
         // Funzione per andare direttamente a una slide
@@ -655,15 +683,21 @@
         // Funzione per aggiornare la posizione delle slide e i pallini
         function updateSlidePosition(modalId) {
             const gallerySlides = document.querySelector(`#${modalId} .gallery-slides`);
+
+            const dots = document.querySelectorAll(`#${modalId} .dot`);
+
             const offset = -slideIndex[modalId] * 100;
             gallerySlides.style.transform = `translateX(${offset}%)`;
 
-            const dots = document.querySelectorAll(`#${modalId} .dot`);
-            dots.forEach(dot => {
-                dot.classList.remove('active');
-            });
-            dots[slideIndex[modalId]].classList.add('active');
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            if (dots[slideIndex[modalId]]) {
+                dots[slideIndex[modalId]].classList.add('active');
+            } else {
+                console.warn(`slideIndex[${modalId}] fuori range: ${slideIndex[modalId]}`);
+            }
         }
+
 
         // Inizializza le gallerie al caricamento della pagina
         document.addEventListener("DOMContentLoaded", initGalleries);
