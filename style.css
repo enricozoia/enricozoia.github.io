@@ -44,7 +44,7 @@ body {
 }
 
 .links a:hover {
-    color: #162740;
+    color: #e63946;
 }
 
 .hamburger-menu {
@@ -171,7 +171,7 @@ body {
     height: 75px;
     border-radius: 20px;
     background-color: #e63946;
-    color: #1e1d3c;
+    color: #ffffff;
     font-size: 25px;
     font-family: Neulis Sans, sans-serif;
     font-weight: 300;
@@ -189,7 +189,7 @@ body {
     height: 50px;
     border-radius: 20px;
     background-color: #e63946;
-    color: #1e1d3c;
+    color: white;
     font-size: 22px;
     font-family: Neulis Sans, sans-serif;
     font-weight: 300;
@@ -215,8 +215,16 @@ body {
     overflow: hidden;
     transition: transform 0.3s;
     border-radius: 10px;
+    animation-duration: 0.5s;
+    animation-name: animate-fade;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
 }
 
+@keyframes animate-fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 .project-card img {
     width: 100%;
@@ -416,6 +424,18 @@ color: #aaa;
 }
 .footer nav {
     justify-content: center;
+}
+.fa {
+    width: 45px;
+    cursor: pointer;
+    color: black;
+}
+.fa:hover {
+    color: #e63946;
+}
+.social-icon {
+    margin-top: 18px;
+    text-align: center;
 }
 
 /* Responsive Styles */
