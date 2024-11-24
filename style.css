@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     background-color: #fafff8;
     margin: 0;
@@ -105,6 +106,7 @@ body {
     font-weight: 400;
     color: #1e1d3c;
 }
+
 .sotto-sottotitolo {
     font-style: italic;
     margin-top: 5px;
@@ -120,21 +122,26 @@ body {
     margin: 0 0 10px 0;
     width: 50%;
 }
+
 .form {
     margin-right: 250px;
 }
+
 .contatti {
     margin-left: 100px;
     display: flex;
 }
+
 .infocontact {
     max-width: 30%;
     margin-right: 75px;
 }
+
 .infocontact p {
     font-size: 22px;
     line-height: 130%;
 }
+
 .form input {
     width: 415px;
     height: 50px;
@@ -148,6 +155,7 @@ body {
     font-size: 18px;
 
 }
+
 .form textarea::placeholder {
     font-size: 18px;
 }
@@ -198,20 +206,26 @@ body {
     text-align: center;
     transition: transform 0.3s;
 }
+
 .invia_button:hover {
     transform: scale(1.05);
 }
+
 .portfolio {
     margin: 0 100px 0 100px;
-    column-count: 4; /* Imposta il numero di colonne */
-    column-gap: 40px; /* Spazio tra le colonne */
+    column-count: 4;
+    /* Imposta il numero di colonne */
+    column-gap: 40px;
+    /* Spazio tra le colonne */
 }
 
 .project-card {
     cursor: pointer;
-    display: inline-block; /* Rende ogni elemento inline-block per farlo fluire correttamente nelle colonne */
+    display: inline-block;
+    /* Rende ogni elemento inline-block per farlo fluire correttamente nelle colonne */
     margin-bottom: 20px;
-    width: 100%; /* Imposta la larghezza al 100% della colonna */
+    width: 100%;
+    /* Imposta la larghezza al 100% della colonna */
     overflow: hidden;
     transition: transform 0.3s;
     border-radius: 10px;
@@ -222,14 +236,19 @@ body {
 }
 
 @keyframes animate-fade {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 .project-card img {
     width: 100%;
     display: block;
-    object-fit:contain;
+    object-fit: contain;
 }
 
 .project-card:hover {
@@ -264,6 +283,7 @@ body {
     margin: 5px 0 0;
     color: #E63946;
 }
+
 .modal {
     justify-content: center;
     align-items: center;
@@ -287,14 +307,17 @@ body {
     border-radius: 20px;
     overflow-y: auto;
 }
+
 .titolomodal {
     margin: 20px 0 15px 50px;
 }
+
 .titolomodal h2 {
     font-size: 35px;
     margin-bottom: 1px;
     color: #1e1d3c;
 }
+
 .titolomodal h3 {
     font-size: 24px;
     margin: 0px 0 0;
@@ -303,12 +326,13 @@ body {
 }
 
 .close {
-float: right;
-color: #aaa;
+    float: right;
+    color: #aaa;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
 }
+
 .close:hover,
 .close:focus {
     color: red;
@@ -333,7 +357,8 @@ color: #aaa;
     transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
     background-color: #717171;
 }
 
@@ -342,14 +367,15 @@ color: #aaa;
     max-width: 70%;
     margin: auto;
     overflow: hidden;
-    
+
 }
 
 
 .gallery-slides {
-    
+
     display: flex;
-    transition: transform 0.5s ease-in-out;;
+    transition: transform 0.5s ease-in-out;
+    ;
 }
 
 .slide {
@@ -360,11 +386,12 @@ color: #aaa;
 
 .slide_vert {
     max-width: 100%;
-    max-height: 100vh; 
+    max-height: 100vh;
     object-fit: contain;
 }
 
-.prev, .next {
+.prev,
+.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -381,24 +408,29 @@ color: #aaa;
 .next {
     right: 10px;
 }
+
 .descrizmodal {
     display: flex;
     gap: 50px;
     margin: 20px 50px 0 50px;
 }
+
 .descrizmodal p {
     font-weight: 100;
     font-size: 18px;
     text-align: justify;
     hyphens: auto
 }
+
 .introdescriz {
     width: 175%;
 }
+
 .bloccopiattaf {
     width: 50%;
     margin-right: 100px;
 }
+
 .piattaf {
     display: flex;
     align-items: center;
@@ -406,12 +438,15 @@ color: #aaa;
     border-radius: 20px;
     padding: 20px;
 }
+
 .piattaf img {
     margin-right: 15px;
 }
+
 .bloccopiattaf p {
     font-size: 20px;
 }
+
 .contatti h3 {
     font-weight: 300;
     font-size: 25px;
@@ -422,17 +457,21 @@ color: #aaa;
     margin-top: 75px;
     padding: 25px;
 }
+
 .footer nav {
     justify-content: center;
 }
+
 .fa {
     width: 45px;
     cursor: pointer;
     color: black;
 }
+
 .fa:hover {
     color: #e63946;
 }
+
 .social-icon {
     margin-top: 18px;
     text-align: center;
@@ -445,6 +484,7 @@ color: #aaa;
     .portfolio {
         column-count: 3;
     }
+
     .intro {
         flex-direction: column;
         align-items: center;
@@ -465,12 +505,15 @@ color: #aaa;
         font-size: 28px;
         /* Riduci la dimensione del testo per schermi più piccoli */
     }
+
     .form {
         width: 1100px;
     }
+
     .contatti {
         display: block;
     }
+
     .infocontact {
         max-width: 100%;
     }
@@ -483,23 +526,35 @@ color: #aaa;
     .form input {
         width: 250px;
     }
+
     .form textarea {
         width: 250px;
     }
+
     .form {
         width: 200px;
     }
+
     .links {
         display: none;
     }
+
+    .footerlink {
+        text-align: center;
+        display: inline-block;
+        line-height: 140%;
+    }
+
     .portfolio {
         margin: 0 50px 0 50px;
         column-count: 1;
     }
+
     .sottotitolo {
         margin-left: 30px;
         font-size: 33px;
     }
+
     .sotto-sottotitolo {
         font-style: italic;
         margin-top: 0px;
@@ -509,47 +564,58 @@ color: #aaa;
     .hamburger-menu {
         display: block;
     }
+
     .modal {
         width: 100vw;
     }
+
     .titolomodal {
         margin: 20px 0 15px 15px;
     }
+
     .titolomodal h2 {
         font-size: 20;
     }
+
     .titolomodal h3 {
         font-size: 14;
     }
+
     .descrizmodal {
         display: block;
         margin: 20px 15px 0 15px;
     }
+
     .gallery-container {
         max-width: 95%;
     }
+
     .intabout {
         margin-left: 30px;
     }
-   .intabout p {
+
+    .intabout p {
         font-size: 20px;
         width: 90%;
     }
+
     .contatto_button {
         width: 150px;
         height: 55px;
         font-size: 20px;
     }
+
     .contatti {
         display: block;
         margin-left: 50px;
     }
+
     .infocontact {
         max-width: 100%;
     }
-    
+
     .introdescriz {
-width: 100%;
+        width: 100%;
     }
 }
 
