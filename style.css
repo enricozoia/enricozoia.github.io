@@ -20,7 +20,31 @@ body {
     align-items: center;
     height: 50px;
     position: relative;
+    animation: slideDown 0.5s ease-out;
 }
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-75%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes appearFromBelow {
+    0% {
+      transform: translateY(15%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
 .header img {
     width: 155px;
@@ -82,6 +106,7 @@ body {
     padding: 50px;
     display: flex;
     gap: 5px;
+    animation: appearFromBelow 1s ease-out;
 }
 
 .intro img {
@@ -101,7 +126,6 @@ body {
 
 .sottotitolo {
     font-size: 45px;
-    margin-left: 100px;
     margin-bottom: 10px;
     font-weight: 400;
     color: #1e1d3c;
@@ -110,17 +134,30 @@ body {
 .sotto-sottotitolo {
     font-style: italic;
     margin-top: 5px;
-    margin-left: 100px;
 }
 
 .intabout {
-    margin-left: 100px;
+    width: 50%;
 }
 
 .intabout p {
     font-size: 20px;
     margin: 0 0 10px 0;
-    width: 50%;
+}
+
+.abouts {
+    display: flex;
+    gap: 150px;
+}
+
+.quote {
+    color: #e63946;
+    border: 3px solid;
+}
+
+.quotetext {
+    font-size: 22px;
+    text-align: center;
 }
 
 .form {
@@ -212,7 +249,6 @@ body {
 }
 
 .portfolio {
-    margin: 0 100px 0 100px;
     column-count: 4;
     /* Imposta il numero di colonne */
     column-gap: 40px;
@@ -477,6 +513,14 @@ body {
     text-align: center;
 }
 
+.divquote {
+    max-width: 40%;
+}
+
+#about, #graphic {
+    margin: 0 100px 0 100px;
+}
+
 /* Responsive Styles */
 
 
@@ -546,19 +590,16 @@ body {
     }
 
     .portfolio {
-        margin: 0 50px 0 50px;
         column-count: 1;
     }
 
     .sottotitolo {
-        margin-left: 30px;
         font-size: 33px;
     }
 
     .sotto-sottotitolo {
         font-style: italic;
         margin-top: 0px;
-        margin-left: 30px;
     }
 
     .hamburger-menu {
@@ -590,14 +631,27 @@ body {
         max-width: 95%;
     }
 
+    .abouts {
+        display: block;
+    }
+
     .intabout {
-        margin-left: 30px;
+        width: 85%;
+    }
+
+    #about, #graphic {
+        margin: 0 30px 0 30px;
+    }
+
+    .divquote {
+        max-width: 100%;
+        margin: 30px 30px 30px 30px;
     }
 
     .intabout p {
         font-size: 20px;
-        width: 90%;
     }
+
 
     .contatto_button {
         width: 150px;
