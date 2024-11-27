@@ -63,9 +63,10 @@
             </div>
             <div class="divquote">
                 <hr class="quote">
-                <p class="quotetext">Il mio obiettivo è contribuire a <strong>far accrescere la conoscenza altrui</strong>: divulgare
-                        il funzionamento di ciò che ci circonda e l'importanza del linguaggio visivo per veicolare dei
-                        messaggi.</p>
+                <p class="quotetext">Il mio obiettivo è contribuire a <strong>far accrescere la conoscenza
+                        altrui</strong>: divulgare
+                    il funzionamento di ciò che ci circonda e l'importanza del linguaggio visivo per veicolare dei
+                    messaggi.</p>
                 <hr class="quote">
             </div>
 
@@ -725,7 +726,31 @@
         // Inizializza le gallerie al caricamento della pagina
         document.addEventListener("DOMContentLoaded", initGalleries);
 
+        document.addEventListener("DOMContentLoaded", () => {
 
+            const projectCards = document.querySelectorAll('.project-card');
+
+            const observerOptions = {
+                root: null, // La viewport attuale
+                rootMargin: '0px',
+                threshold: 0.1 // L'elemento è visibile al 10%
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Aggiungi la classe per attivare l'animazione
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // Osservazione completata
+                    }
+                });
+            }, observerOptions);
+
+            projectCards.forEach(card => {
+                observer.observe(card); // Avvia l'osservazione per ogni elemento
+            });
+
+        })
 
     </script>
 
