@@ -37,14 +37,15 @@ body {
 
 @keyframes appearFromBelow {
     0% {
-      transform: translateY(15%);
-      opacity: 0;
+        transform: translateY(15%);
+        opacity: 0;
     }
+
     100% {
-      transform: translateY(0);
-      opacity: 1;
+        transform: translateY(0);
+        opacity: 1;
     }
-  }
+}
 
 .header img {
     width: 155px;
@@ -280,12 +281,12 @@ body {
 @keyframes animate-fade {
     0% {
         opacity: 0;
-        transform:scale(80%)
+        transform: scale(80%)
     }
 
     100% {
         opacity: 1;
-        transform:scale(100%)
+        transform: scale(100%)
     }
 }
 
@@ -525,9 +526,57 @@ body {
     max-width: 40%;
 }
 
-#about, #graphic, #photo, #contatto, #content {
+#about,
+#graphic,
+#photo,
+#contatto,
+#content {
     margin: 0 100px 0 100px;
 }
+
+#topbutton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #95cbcd;
+    color: white;
+    cursor: pointer;
+    padding: 13px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#topbutton:hover {
+    background-color: #e63946; /* Aggiunge uno sfondo grigio scuro al passaggio del mouse */
+}
+
+.arrow-up {
+    display: flex; /* Imposta flexbox per centrare meglio */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 20px; /* Dimensione della freccia */
+    height: 20px;
+}
+
+.arrow-up::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-left: 5px solid white;
+    border-top: 5px solid white;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto; /* Centra la freccia rispetto al contenitore */
+}
+
 
 /* Responsive Styles */
 
@@ -568,6 +617,23 @@ body {
 
     .infocontact {
         max-width: 100%;
+    }
+
+    .abouts {
+        gap: 50px;
+    }
+
+    .modal {
+        width: 100vw;
+    }
+
+    .descrizmodal {
+        display: block;
+        margin: 20px 15px 0 15px;
+    }
+
+    .introdescriz {
+        width: 100%;
     }
 }
 
@@ -647,7 +713,11 @@ body {
         width: 85%;
     }
 
-    #about, #graphic, #photo, #contatto, #content {
+    #about,
+    #graphic,
+    #photo,
+    #contatto,
+    #content {
         margin: 0 30px 0 30px;
     }
 
