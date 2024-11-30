@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enrico Zoia - Portfolio</title>
+    <meta name="keywords" content="Enrico Zoia, Enrico Tech, Graphic Designer, YouTube">
+    <meta name="description"
+        content="Ciao, sono Enrico Zoia, un content creator tech e graphic designer. Scopri i miei progetti!">
+    <meta name="author" content="Enrico Zoia">
     <link href="style.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico?">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -240,7 +244,7 @@
 
     </div>
 
-    <button onclick="topFunction()" id="topbutton"><i class="arrow-up"></i></button> 
+    <button onclick="topFunction()" id="topbutton"><i class="arrow-up"></i></button>
 
 
     <div id="modalfoto1" class="modal">
@@ -290,7 +294,7 @@
     </div>
 
     <div id="modal1" class="modal">
-        <div class="modal-content">
+        <div id="modal-content" class="modal-content">
             <span class="close" onclick="closeModal('modal1')">&times;</span>
             <div class="titolomodal">
                 <h2>Maria Bambina</h2>
@@ -773,6 +777,40 @@
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
+
+        document.body.addEventListener("click", (event) => {
+            const modalContent = document.querySelectorAll(".modal-content");
+
+            modalContent.forEach((element) => {
+                const rect = element.getBoundingClientRect();
+                const styles = window.getComputedStyle(element);
+
+                const marginTop = parseFloat(styles.marginTop);
+                const marginRight = parseFloat(styles.marginRight);
+                const marginBottom = parseFloat(styles.marginBottom);
+                const marginLeft = parseFloat(styles.marginLeft);
+
+                const clickX = event.clientX;
+                const clickY = event.clientY;
+
+                const isWithinMargins =
+                    clickX >= rect.left - marginLeft && clickX <= rect.right + marginRight &&
+                    clickY >= rect.top - marginTop && clickY <= rect.bottom + marginBottom;
+
+                const isInElement =
+                    clickX >= rect.left && clickX <= rect.right &&
+                    clickY >= rect.top && clickY <= rect.bottom;
+
+                if (isWithinMargins && !isInElement) {
+                    const modal = element.closest(".modal");
+                    if (modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            });
+        });
+
+
 
 
     </script>

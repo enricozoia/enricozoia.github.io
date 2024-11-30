@@ -550,16 +550,20 @@ body {
     text-align: center;
 }
 
-#topbutton:hover {
-    background-color: #e63946; /* Aggiunge uno sfondo grigio scuro al passaggio del mouse */
+@media (hover: hover) {
+    #topbutton:hover {
+        background-color: #e63946;
+    }
 }
 
 .arrow-up {
-    display: flex; /* Imposta flexbox per centrare meglio */
+    display: flex;
+    /* Imposta flexbox per centrare meglio */
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 20px; /* Dimensione della freccia */
+    width: 20px;
+    /* Dimensione della freccia */
     height: 20px;
 }
 
@@ -574,7 +578,8 @@ body {
     left: 0;
     bottom: 0;
     right: 0;
-    margin: auto; /* Centra la freccia rispetto al contenitore */
+    margin: auto;
+    /* Centra la freccia rispetto al contenitore */
 }
 
 
@@ -746,6 +751,11 @@ body {
 
     .introdescriz {
         width: 100%;
+    }
+
+    .close {
+        position: fixed;
+        right: 33px;
     }
 }
 
