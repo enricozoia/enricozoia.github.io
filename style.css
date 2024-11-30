@@ -371,7 +371,8 @@ body {
 }
 
 .close {
-    float: right;
+    position: fixed;
+    right: 10%;
     color: #aaa;
     font-size: 28px;
     font-weight: bold;
@@ -543,11 +544,16 @@ body {
     border: none;
     outline: none;
     background-color: #95cbcd;
-    color: white;
+    color: #e63946;
     cursor: pointer;
     padding: 13px;
     border-radius: 50%;
     text-align: center;
+}
+
+.animation {
+    animation: appearFromBelow 0.5s ease-out;
+    color: black
 }
 
 @media (hover: hover) {
@@ -753,10 +759,6 @@ body {
         width: 100%;
     }
 
-    .close {
-        position: fixed;
-        right: 33px;
-    }
 }
 
 @font-face {

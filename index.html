@@ -748,7 +748,6 @@
                         // Aggiungi la classe per attivare l'animazione
                         entry.target.classList.add('visible');
                         observer.unobserve(entry.target); // Osservazione completata
-                        console.log(document.body.scrollTop)
                     }
                 });
             }, observerOptions);
@@ -766,9 +765,10 @@
         function scrollFunction() {
             if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
                 mybutton.style.display = "block";
-                console.log(document.documentElement.scrollTop)
+                mybutton.classList.add('animation');
             } else {
                 mybutton.style.display = "none";
+                mybutton.classList.remove('animation');
             }
         }
 
