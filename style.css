@@ -228,6 +228,7 @@ body {
     padding: 15px;
     text-align: center;
     transition: transform 0.3s;
+    cursor: pointer;
 }
 
 .contatto_button:hover {
@@ -261,7 +262,6 @@ body {
 }
 
 .project-card {
-    cursor: pointer;
     display: inline-block;
     /* Rende ogni elemento inline-block per farlo fluire correttamente nelle colonne */
     margin-bottom: 20px;
@@ -271,6 +271,10 @@ body {
     transition: transform 0.3s;
     border-radius: 10px;
     opacity: 0;
+}
+
+.card-pointer {
+    cursor: pointer;
 }
 
 .project-card.visible {
@@ -290,11 +294,6 @@ body {
     }
 }
 
-.project-card img {
-    width: 100%;
-    display: block;
-    object-fit: contain;
-}
 
 .project-card:hover {
     transform: scale(1.05);
@@ -304,6 +303,9 @@ body {
     width: 100%;
     height: auto;
     display: block;
+    width: 100%;
+    display: block;
+    object-fit: contain;
 }
 
 .project-info {
@@ -383,6 +385,13 @@ body {
 .close:focus {
     color: red;
     text-decoration: none;
+}
+
+.click {
+    position: absolute;
+    width: 25px;
+    height: auto;
+    margin: 10px;
 }
 
 .dots-container {
