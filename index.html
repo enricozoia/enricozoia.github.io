@@ -7,7 +7,7 @@
     <title>Enrico Zoia - Portfolio</title>
     <meta name="keywords" content="Enrico Zoia, Enrico Tech, Graphic Designer, YouTube">
     <meta name="description"
-        content="Ciao, sono Enrico Zoia, un content creator tech e graphic designer. Scopri i miei progetti!">
+        content="Sono Enrico Zoia, un content creator tech e graphic designer, adoro scoprire cose nuove e condividerle con gli altri. Scopri i miei progetti!">
     <meta name="author" content="Enrico Zoia">
     <link href="style.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico?">
@@ -43,8 +43,8 @@
         <img src="images\profilo.webp">
         <div class="testointro">
             <h1>Ciao 👋<br>sono <b style="color: #E63946">Enrico</b><br>Un ragazzo che ama <b
-                    style="color: #1e1d3c">grafica</b>, <b style="color: #1e1d3c">fotografia</b> e <b
-                    style="color: #1e1d3c">tecnologia</b></h1>
+                    style="color: #1e1d3c">grafica</b>, <b style="">tecnologia</b> e <b
+                    style="color: #1e1d3c">fotografia</b></h1>
         </div>
     </div>
 
@@ -139,22 +139,35 @@
 
     <section id="content">
         <h2 class="sottotitolo">Content Creation</h2>
-        <div class="portfolio">
-            <div class="project-card card-pointer">
-                <img src="images\yt.webp" class="project-image" onclick="openModal('modal8')">
-                <div class="project-info">
-                    <h3 class="project-title">YouTube</h3>
-                    <p class="project-count">ENRICOTECH</p>
-                </div>
+        <p class="sotto-sottotitolo">Oltre alla grafica, adoro divulgare il mondo della tecnologia!</p>
+        <div class="contentcreat">
+            <div>
+                <a class="nolink" href="https://youtube.com/enricotech" target="_blank"><img src="images\Youtube_logo.png" style="width: 35%;"></a>
+                <a class="nolink" href="https://youtube.com/enricotech" target="_blank"><h1>YouTube</h1></a>
+                <hr>
+                <a href="https://youtube.com/enricotech" target="_blank"><h3>ENRICOTECH</h3></a>
+                <p>Il mio percorso su questa fantastica piattaforma inizia nel 2017 con l'intento di condividere la mia
+                    passione per il mondo della tecnologia, in particolare l'elettronica di consumo. Negli anni lo stile
+                    comunicativo e i temi che tratto si sono evoluti fino ad arrivare a un forte focus sulle
+                    telecomunicazioni e sull'obiettivo di far conoscere al pubblico in modo semplice il funzionamento di
+                    tutto ciò che ci circonda.<br>Dalla registrazione al montaggio, dalla comunicazione allo studio
+                    degli argomenti, sono sempre stato autodidatta; la forte passione per questi temi mi ha spinto ad
+                    informarmi sempre di più su di essi e sulle strategie di comunicazione arricchendo così il mio
+                    bagaglio culturale.</p>
             </div>
-            <div class="project-card card-pointer"">
-                <img src="images\sbs.webp" class="project-image" onclick="openModal('modal7')">
-                <div class="project-info">
-                    <h3 class="project-title">Substack</h3>
-                    <p class="project-count">WRITECH</p>
-                </div>
+            <div>
+                <a class="nolink" href="https://enricozoia.substack.com" target="_blank"><img src="images\substack_logo.png" style="width: 16.7%;"></a>
+                <a class="nolink" href="https://enricozoia.substack.com" target="_blank"><h1>Substack</h1></a>
+                <hr>
+                <a href="https://enricozoia.substack.com" target="_blank"><h3>WRITECH</h3></a>
+                <p>Su questa piattaforma soddisfo la mia voglia di raccontare il mondo della tecnologia mediante un
+                    testo scritto. Inizio nel 2021 condividendo i vari tool web che trovo <i><a
+                            href="https://amzn.to/3CqBOD0" target="_blank">(e ai quali avevo anche dedicato un piccolo libro)</a></i>
+                    insieme a qualche link interessante e alle principali notizie tech della settimana. Dall'estate 2023
+                    cambio format dedicando questa piattaforma a degli approfondimenti sempre sul mondo dell'informatica
+                    e delle telecomunicazioni: la storia delle tecnologie, riflessioni personali sul mondo online e
+                    curiosità.</p>
             </div>
-
         </div>
     </section>
     <section id="photo">
@@ -539,68 +552,6 @@
         </div>
     </div>
 
-    <div id="modal7" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal7')">&times;</span>
-            <div class="titolomodal">
-                <h2><a style="text-decoration: none; color: #1e1d3c" href="https://enricozoia.substack.com">Substack</a>
-                </h2>
-                <h3>WRITECH</h3>
-            </div>
-            <div class="gallery-container">
-                <div class="gallery-slides">
-                    <img src="images\substack1.webp" class="slide">
-                    <img src="images\substack2.webp" class="slide">
-                </div>
-                <!-- Frecce per controllare manualmente -->
-                <a class="prev" onclick="changeSlide(-1, 'modal7')">&#10094;</a>
-                <a class="next" onclick="changeSlide(1, 'modal7')">&#10095;</a>
-                <div class="dots-container">
-                </div>
-            </div>
-            <div class="descrizmodal">
-                <p>Su questa piattaforma soddisfo la mia voglia di raccontare il mondo della tecnologia mediante un
-                    testo scritto. Inizio nel 2021 condividendo i vari tool web che trovo <i><a
-                            href="https://amzn.to/3CqBOD0">(e ai quali avevo anche dedicato un piccolo libro)</a></i>
-                    insieme a qualche link interessante e alle principali notizie tech della settimana. Dall'estate 2023
-                    cambio format dedicando questa piattaforma a degli approfondimenti sempre sul mondo dell'informatica
-                    e delle telecomunicazioni: la storia delle tecnologie, riflessioni personali sul mondo online e
-                    curiosità.<br>➡️<a href="https://enricozoia.substack.com">Vai a Substack</a></p>
-            </div>
-        </div>
-    </div>
-
-    <div id="modal8" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal8')">&times;</span>
-            <div class="titolomodal">
-                <h2><a style="text-decoration: none; color: #1e1d3c" href="https://youtube.com/enricotech">YouTube</a>
-                </h2>
-                <h3>ENRICOTECH</h3>
-            </div>
-            <div class="gallery-container">
-                <div class="gallery-slides">
-                    <img src="images\substack1.webp" class="slide">
-                </div>
-                <!-- Frecce per controllare manualmente -->
-                <a class="prev" onclick="changeSlide(-1, 'modal8')">&#10094;</a>
-                <a class="next" onclick="changeSlide(1, 'modal8')">&#10095;</a>
-                <div class="dots-container">
-                </div>
-            </div>
-            <div class="descrizmodal">
-                <p>Il mio percorso su questa fantastica piattaforma inizia nel 2017 con l'intento di condividere la mia
-                    passione per il mondo della tecnologia, in particolare l'elettronica di consumo. Negli anni lo stile
-                    comunicativo e i temi che tratto si sono evoluti fino ad arrivare a un forte focus sulle
-                    telecomunicazioni e sull'obiettivo di far conoscere al pubblico in modo semplice il funzionamento di
-                    tutto ciò che ci circonda.<br>Dalla registrazione al montaggio, dalla comunicazione allo studio
-                    degli argomenti, sono sempre stato autodidatta; la forte passione per questi temi mi ha spinto ad
-                    informarmi sempre di più su di essi e sulle strategie di comunicazione arricchendo così il mio
-                    bagaglio culturale. <br>➡️<a href="https://youtube.com/enricotech">Vai su YouTube</a></p>
-            </div>
-        </div>
-    </div>
-
     <script>
         var modalaperto
         const menuIcon = document.getElementById('menu-icon');
@@ -647,92 +598,118 @@
 
 
         let slideIndex = {}; // Memorizza l'indice della slide per ogni modal
-        let autoSlideIntervals = {}; // Memorizza l'intervallo per ogni modal
+let autoSlideIntervals = {}; // Memorizza l'intervallo per ogni modal
 
-        // Funzione per inizializzare le gallerie
-        function initGalleries() {
-            const modals = document.querySelectorAll('.modal');
-            modals.forEach(modal => {
-                const gallerySlides = modal.querySelectorAll('.gallery-slides .slide');
-                const dotsContainer = modal.querySelector('.dots-container');
-                const modalId = modal.getAttribute('id');
+// Funzione per inizializzare le gallerie
+function initGalleries() {
+    const modals = document.querySelectorAll('.modal');
+    const modalTriggers = document.querySelectorAll('[data-modal-target]');
 
-                // Inizializza slideIndex e crea i pallini per ogni galleria
-                slideIndex[modalId] = 0;
-                createDots(gallerySlides.length, dotsContainer, modalId);
+    // Inizializza modali e gallerie
+    modals.forEach(modal => {
+        const modalId = modal.getAttribute('id');
+        const gallerySlides = modal.querySelector('.gallery-slides');
+        const dotsContainer = modal.querySelector('.dots-container');
 
-                // Imposta l'intervallo di scorrimento automatico per ciascun modal
-                autoSlideIntervals[modalId] = setInterval(() => {
-                    showSlides(1, modalId);
-                }, 3000);
+        slideIndex[modalId] = 0;
+        createDots(gallerySlides.children.length, dotsContainer, modalId);
+        updateSlidePosition(modalId);
 
-                // Mostra la prima immagine inizialmente
-                updateSlidePosition(modalId);
-            });
-        }
+        // Aggiungi evento per chiusura del modal
+        const closeButton = modal.querySelector('.close');
+        closeButton.addEventListener('click', () => {
+            closeModal(modalId);
+        });
+    });
 
-        // Funzione per creare i pallini per ogni galleria
-        function createDots(totalSlides, dotsContainer, modalId) {
-            for (let i = 0; i < totalSlides; i++) {
-                let dot = document.createElement('span');
-                dot.classList.add('dot');
-                dot.setAttribute('onclick', `currentSlide(${i + 1}, '${modalId}')`);
-                dotsContainer.appendChild(dot);
+    // Aggiungi evento per apertura del modal
+    modalTriggers.forEach(trigger => {
+        const targetId = trigger.getAttribute('data-modal-target');
+        trigger.addEventListener('click', () => {
+            const modal = document.getElementById(targetId);
+            if (modal) {
+                openModal(modal);
+                startAutoSlide(targetId);
             }
-        }
+        });
+    });
+}
 
-        // Funzione per cambiare slide manualmente
-        function changeSlide(n, modalId) {
-            clearInterval(autoSlideIntervals[modalId]); // Ferma lo scorrimento automatico quando si clicca
-            showSlides(n, modalId);
-        }
+// Funzione per creare i pallini per ogni galleria
+function createDots(totalSlides, dotsContainer, modalId) {
+    dotsContainer.innerHTML = ''; // Pulisce eventuali pallini esistenti
+    for (let i = 0; i < totalSlides; i++) {
+        let dot = document.createElement('span');
+        dot.classList.add('dot');
+        dot.setAttribute('onclick', `currentSlide(${i + 1}, '${modalId}')`);
+        dotsContainer.appendChild(dot);
+    }
+}
 
-        // Funzione per scorrere automaticamente o manualmente
-        function showSlides(n, modalId) {
-            if (!slideIndex[modalId]) slideIndex[modalId] = 0; // Assicurati che slideIndex sia inizializzato
-            slideIndex[modalId] += n;
+// Funzione per avviare lo scorrimento automatico
+function startAutoSlide(modalId) {
+    if (autoSlideIntervals[modalId]) clearInterval(autoSlideIntervals[modalId]);
+    autoSlideIntervals[modalId] = setInterval(() => {
+        showSlides(1, modalId);
+    }, 3000);
+}
 
-            const gallerySlides = document.querySelector(`#${modalId} .gallery-slides`);
+// Funzione per fermare lo scorrimento automatico
+function stopAutoSlide(modalId) {
+    if (autoSlideIntervals[modalId]) {
+        clearInterval(autoSlideIntervals[modalId]);
+        autoSlideIntervals[modalId] = null;
+    }
+}
 
-            const totalSlides = gallerySlides.children.length;
+// Funzione per cambiare slide manualmente
+function changeSlide(n, modalId) {
+    stopAutoSlide(modalId);
+    showSlides(n, modalId);
+}
 
-            if (slideIndex[modalId] >= totalSlides) {
-                slideIndex[modalId] = 0;
-            } else if (slideIndex[modalId] < 0) {
-                slideIndex[modalId] = totalSlides - 1;
-            }
+// Funzione per andare a una slide specifica
+function currentSlide(n, modalId) {
+    stopAutoSlide(modalId);
+    slideIndex[modalId] = n - 1;
+    updateSlidePosition(modalId);
+}
 
-            updateSlidePosition(modalId);
-        }
+// Funzione per aggiornare la posizione delle slide e i pallini
+function updateSlidePosition(modalId) {
+    const gallerySlides = document.querySelector(`#${modalId} .gallery-slides`);
+    const dots = document.querySelectorAll(`#${modalId} .dot`);
 
-        // Funzione per andare direttamente a una slide
-        function currentSlide(n, modalId) {
-            clearInterval(autoSlideIntervals[modalId]); // Ferma lo scorrimento automatico
-            slideIndex[modalId] = n - 1;
-            updateSlidePosition(modalId);
-        }
+    const offset = -slideIndex[modalId] * 100;
+    gallerySlides.style.transform = `translateX(${offset}%)`;
 
-        // Funzione per aggiornare la posizione delle slide e i pallini
-        function updateSlidePosition(modalId) {
-            const gallerySlides = document.querySelector(`#${modalId} .gallery-slides`);
+    dots.forEach(dot => dot.classList.remove('active'));
+    if (dots[slideIndex[modalId]]) {
+        dots[slideIndex[modalId]].classList.add('active');
+    }
+}
 
-            const dots = document.querySelectorAll(`#${modalId} .dot`);
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = 'block';
+        modal.setAttribute('aria-hidden', 'false');
+        startAutoSlide(modalId); // Avvia lo scorrimento automatico quando si apre il modal
+    }
+}
 
-            const offset = -slideIndex[modalId] * 100;
-            gallerySlides.style.transform = `translateX(${offset}%)`;
+// Funzione per chiudere il modal
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = 'none';
+        modal.setAttribute('aria-hidden', 'true');
+        stopAutoSlide(modalId);
+    }
+}
 
-            dots.forEach(dot => dot.classList.remove('active'));
-
-            if (dots[slideIndex[modalId]]) {
-                dots[slideIndex[modalId]].classList.add('active');
-            } else {
-                console.warn(`slideIndex[${modalId}] fuori range: ${slideIndex[modalId]}`);
-            }
-        }
-
-
-        // Inizializza le gallerie al caricamento della pagina
-        document.addEventListener("DOMContentLoaded", initGalleries);
+// Inizializza le gallerie al caricamento del DOM
+document.addEventListener('DOMContentLoaded', initGalleries);
 
         document.addEventListener("DOMContentLoaded", () => {
 
