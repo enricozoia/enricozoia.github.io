@@ -142,10 +142,15 @@
         <p class="sotto-sottotitolo">Oltre alla grafica, adoro divulgare il mondo della tecnologia!</p>
         <div class="contentcreat">
             <div>
-                <a class="nolink" href="https://youtube.com/enricotech" target="_blank"><img src="images\Youtube_logo.png" style="width: 35%;"></a>
-                <a class="nolink" href="https://youtube.com/enricotech" target="_blank"><h1>YouTube</h1></a>
+                <a class="nolink" href="https://youtube.com/enricotech" target="_blank"><img
+                        src="images\Youtube_logo.png" style="width: 35%;"></a>
+                <a class="nolink" href="https://youtube.com/enricotech" target="_blank">
+                    <h1>YouTube</h1>
+                </a>
                 <hr>
-                <a href="https://youtube.com/enricotech" target="_blank"><h3>ENRICOTECH</h3></a>
+                <a href="https://youtube.com/enricotech" target="_blank">
+                    <h3>ENRICOTECH</h3>
+                </a>
                 <p>Il mio percorso su questa fantastica piattaforma inizia nel 2017 con l'intento di condividere la mia
                     passione per il mondo della tecnologia, in particolare l'elettronica di consumo. Negli anni lo stile
                     comunicativo e i temi che tratto si sono evoluti fino ad arrivare a un forte focus sulle
@@ -156,13 +161,19 @@
                     bagaglio culturale.</p>
             </div>
             <div>
-                <a class="nolink" href="https://enricozoia.substack.com" target="_blank"><img src="images\substack_logo.png" style="width: 16.7%;"></a>
-                <a class="nolink" href="https://enricozoia.substack.com" target="_blank"><h1>Substack</h1></a>
+                <a class="nolink" href="https://enricozoia.substack.com" target="_blank"><img
+                        src="images\substack_logo.png" style="width: 16.7%;"></a>
+                <a class="nolink" href="https://enricozoia.substack.com" target="_blank">
+                    <h1>Substack</h1>
+                </a>
                 <hr>
-                <a href="https://enricozoia.substack.com" target="_blank"><h3>WRITECH</h3></a>
+                <a href="https://enricozoia.substack.com" target="_blank">
+                    <h3>WRITECH</h3>
+                </a>
                 <p>Su questa piattaforma soddisfo la mia voglia di raccontare il mondo della tecnologia mediante un
                     testo scritto. Inizio nel 2021 condividendo i vari tool web che trovo <i><a
-                            href="https://amzn.to/3CqBOD0" target="_blank">(e ai quali avevo anche dedicato un piccolo libro)</a></i>
+                            href="https://amzn.to/3CqBOD0" target="_blank">(e ai quali avevo anche dedicato un piccolo
+                            libro)</a></i>
                     insieme a qualche link interessante e alle principali notizie tech della settimana. Dall'estate 2023
                     cambio format dedicando questa piattaforma a degli approfondimenti sempre sul mondo dell'informatica
                     e delle telecomunicazioni: la storia delle tecnologie, riflessioni personali sul mondo online e
@@ -598,118 +609,135 @@
 
 
         let slideIndex = {}; // Memorizza l'indice della slide per ogni modal
-let autoSlideIntervals = {}; // Memorizza l'intervallo per ogni modal
+        let autoSlideIntervals = {}; // Memorizza l'intervallo per ogni modal
 
-// Funzione per inizializzare le gallerie
-function initGalleries() {
-    const modals = document.querySelectorAll('.modal');
-    const modalTriggers = document.querySelectorAll('[data-modal-target]');
+        // Funzione per inizializzare le gallerie
+        function initGalleries() {
+            const modals = document.querySelectorAll('.modal');
+            const modalTriggers = document.querySelectorAll('[data-modal-target]');
 
-    // Inizializza modali e gallerie
-    modals.forEach(modal => {
-        const modalId = modal.getAttribute('id');
-        const gallerySlides = modal.querySelector('.gallery-slides');
-        const dotsContainer = modal.querySelector('.dots-container');
+            // Inizializza modali e gallerie
+            modals.forEach(modal => {
+                const modalId = modal.getAttribute('id');
+                const gallerySlides = modal.querySelector('.gallery-slides');
+                const dotsContainer = modal.querySelector('.dots-container');
 
-        slideIndex[modalId] = 0;
-        createDots(gallerySlides.children.length, dotsContainer, modalId);
-        updateSlidePosition(modalId);
+                slideIndex[modalId] = 0;
+                createDots(gallerySlides.children.length, dotsContainer, modalId);
+                updateSlidePosition(modalId);
 
-        // Aggiungi evento per chiusura del modal
-        const closeButton = modal.querySelector('.close');
-        closeButton.addEventListener('click', () => {
-            closeModal(modalId);
-        });
-    });
+                // Aggiungi evento per chiusura del modal
+                const closeButton = modal.querySelector('.close');
+                closeButton.addEventListener('click', () => {
+                    closeModal(modalId);
+                });
+            });
 
-    // Aggiungi evento per apertura del modal
-    modalTriggers.forEach(trigger => {
-        const targetId = trigger.getAttribute('data-modal-target');
-        trigger.addEventListener('click', () => {
-            const modal = document.getElementById(targetId);
-            if (modal) {
-                openModal(modal);
-                startAutoSlide(targetId);
+            // Aggiungi evento per apertura del modal
+            modalTriggers.forEach(trigger => {
+                const targetId = trigger.getAttribute('data-modal-target');
+                trigger.addEventListener('click', () => {
+                    const modal = document.getElementById(targetId);
+                    if (modal) {
+                        openModal(modal);
+                        startAutoSlide(targetId);
+                    }
+                });
+            });
+        }
+
+        // Funzione per creare i pallini per ogni galleria
+        function createDots(totalSlides, dotsContainer, modalId) {
+            dotsContainer.innerHTML = ''; // Pulisce eventuali pallini esistenti
+            for (let i = 0; i < totalSlides; i++) {
+                let dot = document.createElement('span');
+                dot.classList.add('dot');
+                dot.setAttribute('onclick', `currentSlide(${i + 1}, '${modalId}')`);
+                dotsContainer.appendChild(dot);
             }
-        });
-    });
-}
+        }
 
-// Funzione per creare i pallini per ogni galleria
-function createDots(totalSlides, dotsContainer, modalId) {
-    dotsContainer.innerHTML = ''; // Pulisce eventuali pallini esistenti
-    for (let i = 0; i < totalSlides; i++) {
-        let dot = document.createElement('span');
-        dot.classList.add('dot');
-        dot.setAttribute('onclick', `currentSlide(${i + 1}, '${modalId}')`);
-        dotsContainer.appendChild(dot);
-    }
-}
+        // Funzione per avviare lo scorrimento automatico
+        function startAutoSlide(modalId) {
+            if (autoSlideIntervals[modalId]) clearInterval(autoSlideIntervals[modalId]);
+            autoSlideIntervals[modalId] = setInterval(() => {
+                showSlides(1, modalId);
+            }, 3000);
+        }
 
-// Funzione per avviare lo scorrimento automatico
-function startAutoSlide(modalId) {
-    if (autoSlideIntervals[modalId]) clearInterval(autoSlideIntervals[modalId]);
-    autoSlideIntervals[modalId] = setInterval(() => {
-        showSlides(1, modalId);
-    }, 3000);
-}
+        // Funzione per fermare lo scorrimento automatico
+        function stopAutoSlide(modalId) {
+            if (autoSlideIntervals[modalId]) {
+                clearInterval(autoSlideIntervals[modalId]);
+                autoSlideIntervals[modalId] = null;
+            }
+        }
 
-// Funzione per fermare lo scorrimento automatico
-function stopAutoSlide(modalId) {
-    if (autoSlideIntervals[modalId]) {
-        clearInterval(autoSlideIntervals[modalId]);
-        autoSlideIntervals[modalId] = null;
-    }
-}
+        // Funzione per cambiare slide manualmente
+        function changeSlide(n, modalId) {
+            stopAutoSlide(modalId);
+            showSlides(n, modalId);
+        }
 
-// Funzione per cambiare slide manualmente
-function changeSlide(n, modalId) {
-    stopAutoSlide(modalId);
-    showSlides(n, modalId);
-}
+        function showSlides(n, modalId) {
+            if (!slideIndex[modalId]) slideIndex[modalId] = 0; // Assicurati che slideIndex sia inizializzato
+            slideIndex[modalId] += n;
 
-// Funzione per andare a una slide specifica
-function currentSlide(n, modalId) {
-    stopAutoSlide(modalId);
-    slideIndex[modalId] = n - 1;
-    updateSlidePosition(modalId);
-}
+            const gallerySlides = document.querySelector(`#${modalId} .gallery-slides`);
 
-// Funzione per aggiornare la posizione delle slide e i pallini
-function updateSlidePosition(modalId) {
-    const gallerySlides = document.querySelector(`#${modalId} .gallery-slides`);
-    const dots = document.querySelectorAll(`#${modalId} .dot`);
+            const totalSlides = gallerySlides.children.length;
 
-    const offset = -slideIndex[modalId] * 100;
-    gallerySlides.style.transform = `translateX(${offset}%)`;
+            if (slideIndex[modalId] >= totalSlides) {
+                slideIndex[modalId] = 0;
+            } else if (slideIndex[modalId] < 0) {
+                slideIndex[modalId] = totalSlides - 1;
+            }
 
-    dots.forEach(dot => dot.classList.remove('active'));
-    if (dots[slideIndex[modalId]]) {
-        dots[slideIndex[modalId]].classList.add('active');
-    }
-}
+            updateSlidePosition(modalId);
+        }
 
-function openModal(modalId) {
-    const modal = document.getElementById(modalId);
-    if (modal) {
-        modal.style.display = 'block';
-        modal.setAttribute('aria-hidden', 'false');
-        startAutoSlide(modalId); // Avvia lo scorrimento automatico quando si apre il modal
-    }
-}
+        // Funzione per andare a una slide specifica
+        function currentSlide(n, modalId) {
+            stopAutoSlide(modalId);
+            slideIndex[modalId] = n - 1;
+            updateSlidePosition(modalId);
+        }
 
-// Funzione per chiudere il modal
-function closeModal(modalId) {
-    const modal = document.getElementById(modalId);
-    if (modal) {
-        modal.style.display = 'none';
-        modal.setAttribute('aria-hidden', 'true');
-        stopAutoSlide(modalId);
-    }
-}
+        // Funzione per aggiornare la posizione delle slide e i pallini
+        function updateSlidePosition(modalId) {
+            const gallerySlides = document.querySelector(`#${modalId} .gallery-slides`);
+            const dots = document.querySelectorAll(`#${modalId} .dot`);
 
-// Inizializza le gallerie al caricamento del DOM
-document.addEventListener('DOMContentLoaded', initGalleries);
+            const offset = -slideIndex[modalId] * 100;
+            gallerySlides.style.transform = `translateX(${offset}%)`;
+
+            dots.forEach(dot => dot.classList.remove('active'));
+            if (dots[slideIndex[modalId]]) {
+                dots[slideIndex[modalId]].classList.add('active');
+            }
+        }
+
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = 'block';
+                modal.setAttribute('aria-hidden', 'false');
+                startAutoSlide(modalId); // Avvia lo scorrimento automatico quando si apre il modal
+            }
+        }
+
+        // Funzione per chiudere il modal
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = 'none';
+                modal.setAttribute('aria-hidden', 'true');
+                stopAutoSlide(modalId);
+            }
+        }
+
+        // Inizializza le gallerie al caricamento del DOM
+        document.addEventListener('DOMContentLoaded', initGalleries);
 
         document.addEventListener("DOMContentLoaded", () => {
 
