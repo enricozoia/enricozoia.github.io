@@ -344,7 +344,10 @@ body {
     overflow: auto;
     background-color: #1e1d3cad;
 }
-
+.modal.visible {
+    display: flex;
+    background-color: red;
+}
 .modal-content {
     background-color: #f1faee;
     margin: 15% auto;

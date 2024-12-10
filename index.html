@@ -589,12 +589,19 @@
         }
 
         function openModal(modalId) {
-            document.getElementById(modalId).style.display = "flex";
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'flex';
+            modal.setAttribute('aria-hidden', 'false');
+            startAutoSlide(modalId); // Avvia lo scorrimento automatico quando si apre il modal
             modalaperto = modalId
         }
 
+        // Funzione per chiudere il modal
         function closeModal(modalId) {
-            document.getElementById(modalId).style.display = "none";
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'none';
+            modal.setAttribute('aria-hidden', 'true');
+            stopAutoSlide(modalId);
             modalaperto = ""
         }
 
@@ -714,25 +721,6 @@
             dots.forEach(dot => dot.classList.remove('active'));
             if (dots[slideIndex[modalId]]) {
                 dots[slideIndex[modalId]].classList.add('active');
-            }
-        }
-
-        function openModal(modalId) {
-            const modal = document.getElementById(modalId);
-            if (modal) {
-                modal.style.display = 'block';
-                modal.setAttribute('aria-hidden', 'false');
-                startAutoSlide(modalId); // Avvia lo scorrimento automatico quando si apre il modal
-            }
-        }
-
-        // Funzione per chiudere il modal
-        function closeModal(modalId) {
-            const modal = document.getElementById(modalId);
-            if (modal) {
-                modal.style.display = 'none';
-                modal.setAttribute('aria-hidden', 'true');
-                stopAutoSlide(modalId);
             }
         }
 
