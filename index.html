@@ -83,7 +83,7 @@
         <h2 class="sottotitolo">Graphic Design</h2>
         <p class="sotto-sottotitolo">Clicca sui progetti per scoprire di più!</p>
         <div class="portfolio">
-            <div class="project-card card-pointer" onclick="openModal('modal1')">
+            <div class="project-card card-pointer" onclick="openModal('mariabambina')">
                 <img src=" images\MB.webp" class="project-image">
                 <div class="project-info">
                     <h3 class="project-title">Maria Bambina</h3>
@@ -91,42 +91,42 @@
                 </div>
             </div>
             <div class="project-card card-pointer">
-                <img src="images\pb_0.webp" class="project-image" onclick="openModal('modal2')">
+                <img src="images\pb_0.webp" class="project-image" onclick="openModal('personal-branding')">
                 <div class="project-info">
                     <h3 class="project-title">Personal Branding</h3>
                     <p class="project-count">LOGOTIPO</p>
                 </div>
             </div>
             <div class="project-card card-pointer">
-                <img src="images\Oliv_1.webp" class="project-image" onclick="openModal('modal3')">
+                <img src="images\Oliv_1.webp" class="project-image" onclick="openModal('brochure-olivetti')">
                 <div class="project-info">
                     <h3 class="project-title">Olivetti</h3>
                     <p class="project-count">EDITORIA</p>
                 </div>
             </div>
             <div class="project-card card-pointer">
-                <img src="images\DM_0.webp" class="project-image" onclick="openModal('modal4')">
+                <img src="images\DM_0.webp" class="project-image" onclick="openModal('dolcemilano')">
                 <div class="project-info">
                     <h3 class="project-title">Dolcemilano</h3>
                     <p class="project-count">LOGOTIPO</p>
                 </div>
             </div>
             <div class="project-card card-pointer">
-                <img src="images\Sociosf_0.webp" class="project-image" onclick="openModal('modal5')">
+                <img src="images\Sociosf_0.webp" class="project-image" onclick="openModal('sociosfera')">
                 <div class="project-info">
                     <h3 class="project-title">La Famiglia al Centro dell'Ambito</h3>
                     <p class="project-count">LOGOTIPO</p>
                 </div>
             </div>
             <div class="project-card card-pointer">
-                <img src="images\Camugnano_0.webp" class="project-image" onclick="openModal('modal9')">
+                <img src="images\Camugnano_0.webp" class="project-image" onclick="openModal('mappa-camugnano')">
                 <div class="project-info">
                     <h3 class="project-title">Mappa della Comunità di Camugnano</h3>
                     <p class="project-count">EDITORIA</p>
                 </div>
             </div>
             <div class="project-card card-pointer">
-                <img src="images\GO_0.webp" class="project-image" onclick="openModal('modal6')">
+                <img src="images\GO_0.webp" class="project-image" onclick="openModal('grafica-ovunque')">
                 <div class="project-info">
                     <h3 class="project-title">Grafica, Ovunque</h3>
                     <p class="project-count">EDITORIA</p>
@@ -387,8 +387,15 @@
                 </div>
             </div>
             <div class="descrizmodal">
-                <p>Realizzazione di una semplice identità visiva per la mia persona, che possa rispecchiarmi e accompagnare i miei progetti con coerenza visiva.</p>
-                <p>Le iniziali del mio nome e cognome sono state unite in un unico pittogramma costruito partendo da una griglia modulare di quadrati. Uno di questi è stato lasciato isolato nell'angolo a rappresentare le mie due passioni, ha infatti un doppio significato: i pixel, quindi la grafica, e l'estensioni dei siti web, ovvero il mondo TLC. La rigidità del simbolo, alla quale contribuisce anche la tinta scura di blu, viene smorzata dalla diagonale che conferisce dinamicità e dal font scelto. Quest'ultimo infatti risulta molto informale, innovativo e "divertente", caratteristiche della mia personalità.</p>
+                <p>Realizzazione di una semplice identità visiva per la mia persona, che possa rispecchiarmi e
+                    accompagnare i miei progetti con coerenza visiva.</p>
+                <p>Le iniziali del mio nome e cognome sono state unite in un unico pittogramma costruito partendo da una
+                    griglia modulare di quadrati. Uno di questi è stato lasciato isolato nell'angolo a rappresentare le
+                    mie due passioni, ha infatti un doppio significato: i pixel, quindi la grafica, e l'estensioni dei
+                    siti web, ovvero il mondo TLC. La rigidità del simbolo, alla quale contribuisce anche la tinta scura
+                    di blu, viene smorzata dalla diagonale che conferisce dinamicità e dal font scelto. Quest'ultimo
+                    infatti risulta molto informale, innovativo e "divertente", caratteristiche della mia personalità.
+                </p>
             </div>
         </div>
     </div>
@@ -805,7 +812,12 @@
             });
         });
 
-
+        window.addEventListener("DOMContentLoaded", () => {
+            const hash = window.location.hash.substring(1); // Rimuove il simbolo #
+            if (hash) {
+                openModal(hash);
+            }
+        });
 
 
     </script>
