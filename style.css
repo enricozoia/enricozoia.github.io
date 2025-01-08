@@ -9,6 +9,9 @@ body {
     font-weight: 100;
 }
 
+.descrizcontent {
+    font-size: 18px;
+}
 
 .header {
     background-color: #95cbcd;
