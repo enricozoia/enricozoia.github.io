@@ -120,11 +120,13 @@ body {
 
 .intro img {
     display: block;
-    min-width: 35%;
-    width: 35%;
-    height: 35%;
-    border-radius: 50%;
+    width: 30%;
+    height: 30%;
     margin: 0 100px 0 150px;
+}
+
+.intro hr {
+    height: 10px;
 }
 
 .testointro h1 {
@@ -132,6 +134,7 @@ body {
     font-size: 40px;
     font-weight: 200;
 }
+
 .sottotitolo {
     font-size: 45px;
     margin-bottom: 10px;
@@ -347,10 +350,12 @@ body {
     overflow: auto;
     background-color: #1e1d3cad;
 }
+
 .modal.visible {
     display: flex;
     background-color: red;
 }
+
 .modal-content {
     background-color: #f1faee;
     margin: 15% auto;
@@ -602,24 +607,29 @@ body {
     margin: auto;
     /* Centra la freccia rispetto al contenitore */
 }
+
 .contentcreat {
     display: flex;
     margin-top: 20px;
     gap: 60px;
 }
+
 .contentcreat h1 {
     font-size: 30px;
     color: #1e1d3c;
     margin-bottom: 15px;
 }
+
 .nolink {
     text-decoration: none;
 }
+
 .contentcreat h3 {
-    color:#E63946;
+    color: #E63946;
     text-decoration: none;
     font-weight: 200;
 }
+
 .contentcreat p {
     text-align: justify;
     hyphens: auto;
@@ -794,6 +804,7 @@ body {
     .introdescriz {
         width: 100%;
     }
+
     .contentcreat {
         display: block;
         margin-top: 20px;
