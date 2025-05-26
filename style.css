@@ -125,6 +125,10 @@ body {
     margin: 0 100px 0 150px;
 }
 
+.content-logo {
+    width: 50%;
+}
+
 .intro hr {
     height: 10px;
 }
