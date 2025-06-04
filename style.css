@@ -273,14 +273,13 @@ body {
 
 .project-card {
     display: inline-block;
-    /* Rende ogni elemento inline-block per farlo fluire correttamente nelle colonne */
     margin-bottom: 20px;
     width: 100%;
-    /* Imposta la larghezza al 100% della colonna */
     overflow: hidden;
     transition: transform 0.3s;
     border-radius: 10px;
     opacity: 0;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
 }
 
 .card-pointer {
@@ -637,6 +636,54 @@ body {
 .contentcreat p {
     text-align: justify;
     hyphens: auto;
+}
+
+.content-grid {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.content-card {
+    background-color: #a8dadc;
+    border-radius: 20px;
+    padding: 25px;
+    flex: 1 1 45%;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.content-card:hover {
+    transform: scale(1.03);
+}
+
+.content-icon {
+    width: 35%;
+    margin-bottom: 10px;
+}
+
+.content-icon.small {
+    width: 25%;
+}
+
+.content-platform {
+    font-size: 24px;
+    color: #e63946;
+    margin: 10px 0;
+    font-weight: 200;
+}
+
+.content-card p {
+    text-align: left;
+    font-size: 18px;
+    color: #1e1d3c;
+    line-height: 1.4;
+    margin: 5px
 }
 
 /* Responsive Styles */
