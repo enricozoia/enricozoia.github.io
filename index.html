@@ -151,11 +151,9 @@
         <p class="sotto-sottotitolo">Scopri come condivido la mia passione per la tecnologia!</p>
 
         <div class="content-grid">
-            <div class="content-card">
-                <a href="https://youtube.com/enricotech" target="_blank">
-                    <img src="images/Youtube_logo.png" alt="YouTube Logo" class="content-icon">
-                    <h3 class="content-platform">ENRICOTECH</h3>
-                </a>
+            <div id="yt-card" class="content-card">
+                <img src="images/Youtube_logo.png" alt="YouTube Logo" class="content-icon">
+                <h3 class="content-platform">ENRICOTECH</h3>
                 <p>Dal 2017 creo video per condividere la mia passione per la tecnologia, con un particolare <b>focus
                         sulle telecomunicazioni</b> e sull'obiettivo di far conoscere al pubblico in modo semplice il
                     funzionamento di tutto ciò che ci circonda.
@@ -165,11 +163,9 @@
                     culturale e perfezionando le mie capacità comunicative</p>
             </div>
 
-            <div class="content-card">
-                <a href="https://enricozoia.substack.com" target="_blank">
-                    <img src="images/substack_logo.png" alt="Substack Logo" class="content-icon small">
-                    <h3 class="content-platform">WRITECH</h3>
-                </a>
+            <div id="sbs-card" class="content-card">
+                <img src="images/substack_logo.png" alt="Substack Logo" class="content-icon small">
+                <h3 class="content-platform">WRITECH</h3>
                 <p>
                     Un progetto iniziato per condividere tool utili che trovavo per il web e che da qualche anno si è
                     trasformato in uno <b>spazio di approfondimento sul mondo del digitale</b> e delle
@@ -798,6 +794,13 @@
             if (hash) {
                 openModal(hash);
             }
+        });
+
+        document.getElementById('yt-card').addEventListener('click', function () {
+            window.open('https://www.youtube.com/enricotech', '_blank');
+        });
+        document.getElementById('sbs-card').addEventListener('click', function () {
+            window.open('https://enricozoia.substack.com', '_blank');
         });
 
 
