@@ -189,30 +189,23 @@
                 telecomunicazioni affinando sempre di più le mie capacità di <b>tradurre le complessità tecniche in
                     contenuti coinvolgenti e accessibili a tutti.</b> Questo mi ha permesso di costruire una community
                 appassionata a scoprire cosa c'è dietro una banale connessione internet.</p>
-            <p style="margin: 8px 0 -5px 0; font-size: 18px">Racconto come funzionano le infrastrutture FTTH, spiegando come arriva la connessione nelle nostre case e
+            <p style="margin: 8px 0 -5px 0; font-size: 18px">Racconto come funzionano le infrastrutture FTTH, spiegando
+                come arriva la connessione nelle nostre case e
                 cercando di sensibilizzare il pubblico alla scelta della miglior connessione. Un tema che mi affascina
                 particolarmente sono le vecchie tecnologie, i primi piani di copertura e la loro evoluzione, e vecchi
                 progetti delle TLC ormai dimenticati dai più di cui cerco di mantenere la memoria.</p>
             <div style="overflow-x: hidden;">
                 <div class="content-grid" id="carosello_tlc" style="display: flex; transition: transform 0.7s;">
-                    <a href="https://youtu.be/gVFBe60QbTs" target="_blank"><img src="images/miniat_1.webp"
-                            class="project-card card-pointer"></a>
-                    <a href="https://youtu.be/0af_hBHN3_Y" target="_blank"><img src="images/miniat_2.webp"
-                            class="project-card card-pointer"></a>
-                    <a href="https://youtu.be/9qDCczH-pUo" target="_blank"><img src="images/miniat_3.webp"
-                            class="project-card card-pointer"></a>
-                    <a href="https://youtu.be/CRmHBOEaV8E" target="_blank"><img src="images/miniat_4.webp"
-                            class="project-card card-pointer"></a>
-                    <a href="https://youtu.be/L4j50XwsBpo" target="_blank"><img src="images/miniat_5.webp"
-                            class="project-card card-pointer"></a>
-                    <a href="https://youtu.be/oCYRsKTW3Io" target="_blank"><img src="images/miniat_6.webp"
-                            class="project-card card-pointer"></a>
-                    <a href="https://youtu.be/T5mvx8GypxI" target="_blank"><img src="images/miniat_7.webp"
-                            class="project-card card-pointer"></a>
-                    <a href="https://youtu.be/BFhfBrMNxio" target="_blank"><img src="images/miniat_8.webp"
-                            class="project-card card-pointer"></a>
-                    <a href="https://youtu.be/KsrQN9maA7Y" target="_blank"><img src="images/miniat_9.webp"
-                            class="project-card card-pointer"></a>
+                    <a href="https://youtu.be/gVFBe60QbTs" target="_blank"><img src="images/miniat_1.webp" class="project-card card-pointer"></a>
+                    <a href="https://youtu.be/0af_hBHN3_Y" target="_blank"><img src="images/miniat_2.webp" class="project-card card-pointer"></a>
+                    <a href="https://youtu.be/KsrQN9maA7Y" target="_blank"><img src="images/miniat_9.webp" class="project-card card-pointer"></a>
+                    <a href="https://youtu.be/CRmHBOEaV8E" target="_blank"><img src="images/miniat_4.webp" class="project-card card-pointer"></a>
+                    <a href="https://youtu.be/L4j50XwsBpo" target="_blank"><img src="images/miniat_5.webp" class="project-card card-pointer"></a>
+                    <a href="https://youtu.be/oCYRsKTW3Io" target="_blank"><img src="images/miniat_6.webp" class="project-card card-pointer"></a>
+                    <a href="https://youtu.be/9qDCczH-pUo" target="_blank"><img src="images/miniat_3.webp" class="project-card card-pointer"></a>
+                    <a href="https://youtu.be/T5mvx8GypxI" target="_blank"><img src="images/miniat_7.webp" class="project-card card-pointer"></a>
+                    <a href="https://youtu.be/BFhfBrMNxio" target="_blank"><img src="images/miniat_8.webp" class="project-card card-pointer"></a>
+                    <a href="https://youtu.be/tbX-zugQ5a8" target="_blank"><img src="images/miniat_10.webp" class="project-card card-pointer"></a>
                 </div>
             </div>
         </div>
@@ -924,7 +917,8 @@
 
                 function nextSlide() {
                     startIndex++;
-                    if (startIndex > images.length - visibleCount) {
+                    const maxStartIndex = Math.max(0, images.length - visibleCount);
+                    if (startIndex > maxStartIndex) {
                         startIndex = 0;
                     }
                     updateCarousel();
@@ -937,17 +931,16 @@
                         img.style.minWidth = (containerWidth / visibleCount) + 'px';
                         img.style.maxWidth = (containerWidth / visibleCount) + 'px';
                     });
-                    // Reset startIndex if out of bounds after resize
-                    if (startIndex > images.length - visibleCount) {
-                        startIndex = 0;
+                    const maxStartIndex = Math.max(0, images.length - visibleCount);
+                    if (startIndex > maxStartIndex) {
+                        startIndex = maxStartIndex;
                     }
                     updateCarousel();
                 }
 
                 setImageWidths();
                 window.addEventListener('resize', setImageWidths);
-
-                setInterval(nextSlide, 2500);
+                setInterval(nextSlide, 2000);
             });
         </script>
 
