@@ -146,6 +146,13 @@ body {
     color: #1e1d3c;
 }
 
+.titolo_paragrafo {
+    font-size: 25px;
+    font-weight: 300;
+    color: #1e1d3c
+}
+
+
 .sotto-sottotitolo {
     font-style: italic;
     margin-top: 5px;
@@ -279,7 +286,7 @@ body {
     transition: transform 0.3s;
     border-radius: 10px;
     opacity: 0;
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card-pointer {
@@ -640,7 +647,6 @@ body {
     display: flex;
     gap: 40px;
     margin-top: 30px;
-    flex-wrap: wrap;
 }
 
 .content-card {
@@ -648,7 +654,7 @@ body {
     border-radius: 20px;
     padding: 25px;
     flex: 1 1 45%;
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -747,6 +753,14 @@ body {
 @media screen and (max-width: 740px) {
     .form input {
         width: 250px;
+    }
+
+    .content-grid {
+        display: block;
+    }
+
+    .content-grid div {
+        margin-bottom: 20px;
     }
 
     .form textarea {

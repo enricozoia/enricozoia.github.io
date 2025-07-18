@@ -24,6 +24,7 @@
             <a href="#about" style="margin-right: 15px">ABOUT ME</a>
             <a href="#graphic" style="margin-right: 15px">GRAPHIC DESIGN</a>
             <a href="#content" style="margin-right: 15px">CONTENT CREATION</a>
+            <a href="#contatto" style="margin-right: 15px">CONTATTI</a>
         </nav>
         <div class="hamburger-menu" id="menu-icon">
             &#9776;
@@ -176,9 +177,43 @@
                 <h3 class="content-platform">WRITECH</h3>
                 <p>
                     Un progetto iniziato per condividere tool utili che trovavo per il web e che da qualche anno si è
-                    trasformato in uno <b>spazio di approfondimento sul mondo del digitale</b> e delle
-                    telecomunicazioni. Parliamo della storia delle tecnologie, curiosità, notizie e riflessioni
+                    trasformato in uno <b>spazio di approfondimento sul mondo del digitale</b> e di internet. Parliamo
+                    della storia delle tecnologie, curiosità, notizie e riflessioni
                     personali.</p>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="titolo_paragrafo">Telecomunicazioni</h2>
+            <p style="margin: -10px 0 0 0; font-size: 18px">Negli anni mi sono specializzato nel settore delle
+                telecomunicazioni affinando sempre di più le mie capacità di <b>tradurre le complessità tecniche in
+                    contenuti coinvolgenti e accessibili a tutti.</b> Questo mi ha permesso di costruire una community
+                appassionata a scoprire cosa c'è dietro una banale connessione internet.</p>
+            <p style="margin: 8px 0 -5px 0; font-size: 18px">Racconto come funzionano le infrastrutture FTTH, spiegando come arriva la connessione nelle nostre case e
+                cercando di sensibilizzare il pubblico alla scelta della miglior connessione. Un tema che mi affascina
+                particolarmente sono le vecchie tecnologie, i primi piani di copertura e la loro evoluzione, e vecchi
+                progetti delle TLC ormai dimenticati dai più di cui cerco di mantenere la memoria.</p>
+            <div style="overflow-x: hidden;">
+                <div class="content-grid" id="carosello_tlc" style="display: flex; transition: transform 0.7s;">
+                    <a href="https://youtu.be/gVFBe60QbTs" target="_blank"><img src="images/miniat_1.webp"
+                            class="project-card card-pointer"></a>
+                    <a href="https://youtu.be/0af_hBHN3_Y" target="_blank"><img src="images/miniat_2.webp"
+                            class="project-card card-pointer"></a>
+                    <a href="https://youtu.be/9qDCczH-pUo" target="_blank"><img src="images/miniat_3.webp"
+                            class="project-card card-pointer"></a>
+                    <a href="https://youtu.be/CRmHBOEaV8E" target="_blank"><img src="images/miniat_4.webp"
+                            class="project-card card-pointer"></a>
+                    <a href="https://youtu.be/L4j50XwsBpo" target="_blank"><img src="images/miniat_5.webp"
+                            class="project-card card-pointer"></a>
+                    <a href="https://youtu.be/oCYRsKTW3Io" target="_blank"><img src="images/miniat_6.webp"
+                            class="project-card card-pointer"></a>
+                    <a href="https://youtu.be/T5mvx8GypxI" target="_blank"><img src="images/miniat_7.webp"
+                            class="project-card card-pointer"></a>
+                    <a href="https://youtu.be/BFhfBrMNxio" target="_blank"><img src="images/miniat_8.webp"
+                            class="project-card card-pointer"></a>
+                    <a href="https://youtu.be/KsrQN9maA7Y" target="_blank"><img src="images/miniat_9.webp"
+                            class="project-card card-pointer"></a>
+                </div>
             </div>
         </div>
     </section>
@@ -304,7 +339,7 @@
                 </div>
             </div>
             <div class="descrizmodal">
-                <p >Realizzazione di un logo per la Scuola dell'Infanzia Paritaria Maria Bambina di
+                <p>Realizzazione di un logo per la Scuola dell'Infanzia Paritaria Maria Bambina di
                     Lissone (MB) nell'ambito di un concorso da loro indetto per rinnovare la propria identità visiva
                     dopo 100 anni di storia. Il logo da me ideato è stato selezionato come vincitore e utilizzato nei
                     loro canali comunicativi.</p>
@@ -451,7 +486,7 @@
                     </div>
                 </div>
                 <div class="descrizmodal">
-                    <p >Realizzazione di un logotipo con relativa immagine coordinate per
+                    <p>Realizzazione di un logotipo con relativa immagine coordinate per
                         un'ipotetica
                         pasticceria di alto livello con 3 punti vendita nel centro di Milano.</p>
                     <p>Il segno ideato rappresenta un croissant, prodotto di punta della pasticceria, che grazie alla
@@ -876,6 +911,44 @@
             });
 
 
+            document.addEventListener("DOMContentLoaded", function () {
+                const carousel = document.getElementById('carosello_tlc');
+                const images = carousel.querySelectorAll('img');
+                let visibleCount = window.innerWidth < 740 ? 2 : 4;
+                let startIndex = 0;
+
+                function updateCarousel() {
+                    const offset = -startIndex * (carousel.offsetWidth / visibleCount);
+                    carousel.style.transform = `translateX(${offset}px)`;
+                }
+
+                function nextSlide() {
+                    startIndex++;
+                    if (startIndex > images.length - visibleCount) {
+                        startIndex = 0;
+                    }
+                    updateCarousel();
+                }
+
+                function setImageWidths() {
+                    visibleCount = window.innerWidth < 740 ? 2 : 4;
+                    const containerWidth = carousel.parentElement.offsetWidth;
+                    images.forEach(img => {
+                        img.style.minWidth = (containerWidth / visibleCount) + 'px';
+                        img.style.maxWidth = (containerWidth / visibleCount) + 'px';
+                    });
+                    // Reset startIndex if out of bounds after resize
+                    if (startIndex > images.length - visibleCount) {
+                        startIndex = 0;
+                    }
+                    updateCarousel();
+                }
+
+                setImageWidths();
+                window.addEventListener('resize', setImageWidths);
+
+                setInterval(nextSlide, 2500);
+            });
         </script>
 
 </body>
