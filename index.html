@@ -19,31 +19,29 @@
 
 <body>
     <div class="header">
-        <img src="images\logofull.svg">
+        <img src="images/logofull.svg" alt="Enrico Zoia logo">
         <nav class="links">
-            <a href="#about" style="margin-right: 15px">ABOUT ME</a>
-            <a href="#graphic" style="margin-right: 15px">GRAPHIC DESIGN</a>
-            <a href="#content" style="margin-right: 15px">CONTENT CREATION</a>
-            <a href="#contatto" style="margin-right: 15px">CONTATTI</a>
+            <a href="#about" class="nav-link" data-section="about">ABOUT ME</a>
+            <a href="#graphic" class="nav-link" data-section="graphic">GRAPHIC DESIGN</a>
+            <a href="#content" class="nav-link" data-section="content">CONTENT CREATION</a>
+            <a href="#contatto" class="nav-link" data-section="contatto">CONTATTI</a>
         </nav>
-        <div class="hamburger-menu" id="menu-icon">
+        <button class="hamburger-menu" id="menu-icon" aria-label="Apri il menu di navigazione" aria-expanded="false">
             &#9776;
-        </div>
+        </button>
     </div>
 
-    <div class="mobile-menu" id="mobile-menu">
+    <nav class="mobile-menu" id="mobile-menu" aria-hidden="true">
         <div id="menuLink">
-            <p>
-                <a href="#about" style="margin-right: 15px">ABOUT ME</a><a href="#graphic">GRAPHIC DESIGN</a>
-            </p>
-            <p>
-                <a href="#content">CONTENT CREATION</a><a href="#contatto">CONTATTI</a>
-            </p>
+            <a href="#about">ABOUT ME</a>
+            <a href="#graphic">GRAPHIC DESIGN</a>
+            <a href="#content">CONTENT CREATION</a>
+            <a href="#contatto">CONTATTI</a>
         </div>
-    </div>
+    </nav>
 
     <div class="intro">
-        <img src="images\profilo_new.webp">
+        <img src="images/profilo_new.webp" alt="Foto di Enrico Zoia">
         <div class="testointro">
             <h1>Ciao 👋<br>sono <b style="color: #E63946">Enrico</b><br>Un ragazzo che ama <b
                     style="color: #1e1d3c">grafica</b>, <b style="color: #1e1d3c">informatica</b> e <b
@@ -87,49 +85,53 @@
         <p class="sotto-sottotitolo">Clicca sui progetti per scoprire di più!</p>
         <div class="portfolio">
             <div class="project-card card-pointer" onclick="openModal('mariabambina')">
-                <img src=" images\MB.webp" class="project-image">
+                <img src="images/MB.webp" class="project-image" alt="Anteprima progetto: Maria Bambina">
                 <div class="project-info">
                     <h3 class="project-title">Maria Bambina</h3>
                     <p class="project-count">BRANDING</p>
                 </div>
             </div>
             <div class="project-card card-pointer" onclick="openModal('quotidiano')">
-                <img src="images\Quotid_Cover.webp" class="project-image">
+                <img src="images/Quotid_Cover.webp" class="project-image"
+                    alt="Anteprima progetto: Redesign di un Quotidiano">
                 <div class="project-info">
                     <h3 class="project-title">Redesign di un Quotidiano</h3>
                     <p class="project-count">EDITORIA</p>
                 </div>
             </div>
             <div class="project-card card-pointer" onclick="openModal('personal-branding')">
-                <img src="images\pb_0.webp" class="project-image">
+                <img src="images/pb_0.webp" class="project-image" alt="Anteprima progetto: Personal Branding">
                 <div class="project-info">
                     <h3 class="project-title">Personal Branding</h3>
                     <p class="project-count">BRANDING</p>
                 </div>
             </div>
             <div class="project-card card-pointer" onclick="openModal('ancona')">
-                <img src="images\Ancona_cover.webp" class="project-image">
+                <img src="images/Ancona_cover.webp" class="project-image"
+                    alt="Anteprima progetto: City Branding Ancona">
                 <div class="project-info">
                     <h3 class="project-title">City Branding Ancona</h3>
                     <p class="project-count">BRANDING</p>
                 </div>
             </div>
             <div class="project-card card-pointer" onclick="openModal('dolcemilano')">
-                <img src="images\DM_0.webp" class="project-image">
+                <img src="images/DM_0.webp" class="project-image" alt="Anteprima progetto: Dolcemilano">
                 <div class="project-info">
                     <h3 class="project-title">Dolcemilano</h3>
                     <p class="project-count">BRANDING</p>
                 </div>
             </div>
             <div class="project-card card-pointer" onclick="openModal('sociosfera')">
-                <img src="images\Sociosf_0.webp" class="project-image">
+                <img src="images/Sociosf_0.webp" class="project-image"
+                    alt="Anteprima progetto: La Famiglia al Centro dell'Ambito">
                 <div class="project-info">
                     <h3 class="project-title">La Famiglia al Centro dell'Ambito</h3>
                     <p class="project-count">BRANDING</p>
                 </div>
             </div>
             <div class="project-card card-pointer" onclick="openModal('manifestoavis')">
-                <img src="images\Avis.jpg" class="project-image">
+                <img src="images/Avis.jpg" class="project-image"
+                    alt="Anteprima progetto: Manifesto Auguri Natalizi AVIS Lissone">
                 <div class="project-info">
                     <h3 class="project-title">Manifesto Auguri Natalizi AVIS Lissone</h3>
                     <p class="project-count">EDITORIA</p>
@@ -137,14 +139,15 @@
             </div>
 
             <div class="project-card card-pointer" onclick="openModal('mappa-camugnano')">
-                <img src="images\Camugnano_0.webp" class="project-image">
+                <img src="images/Camugnano_0.webp" class="project-image"
+                    alt="Anteprima progetto: Mappa della Comunità di Camugnano">
                 <div class="project-info">
                     <h3 class="project-title">Mappa della Comunità di Camugnano</h3>
                     <p class="project-count">EDITORIA</p>
                 </div>
             </div>
             <div class="project-card card-pointer" onclick="openModal('grafica-ovunque')">
-                <img src="images\GO_0.webp" class="project-image">
+                <img src="images/GO_0.webp" class="project-image" alt="Anteprima progetto: Grafica, Ovunque">
                 <div class="project-info">
                     <h3 class="project-title">Grafica, Ovunque</h3>
                     <p class="project-count">EDITORIA</p>
@@ -159,37 +162,73 @@
         <h2 class="sottotitolo">Content Creation</h2>
         <p class="sotto-sottotitolo">Scopri come condivido la mia passione per la tecnologia!</p>
 
+        <div></div>
         <div class="content-grid">
-            <div id="yt-card" class="content-card">
-                <img src="images/Youtube_logo.png" alt="YouTube Logo" class="content-icon">
-                <h3 class="content-platform">ENRICOTECH</h3>
-                <p>Dal 2017 creo video per condividere la mia passione per la tecnologia, con un particolare <b>focus
-                        sulle telecomunicazioni</b> e sull'obiettivo di far conoscere al pubblico in modo semplice il
+            <div id="yt-card" class="content-card" role="link" tabindex="0"
+                aria-label="Vai al canale YouTube EnricoTech">
+                <div class="content-card-head">
+                    <img src="images/Youtube_logo.png" alt="Logo YouTube" class="content-icon">
+                    <h3 class="content-platform">ENRICOTECH</h3>
+                </div>
+                <p>Dal 2017 creo video per condividere la mia passione per la tecnologia, con un particolare
+                    <strong>focus
+                        sulle telecomunicazioni</strong> e sull'obiettivo di far conoscere al pubblico in modo semplice
+                    il
                     funzionamento di tutto ciò che ci circonda.
                 </p>
-                <p>Sono sempre stato <b>autodidatta</b> nell'intero processo di realizzazione dei video; la forte
+                <p>Sono sempre stato <strong>autodidatta</strong> nell'intero processo di realizzazione dei video; la
+                    forte
                     passione per questi temi mi ha spinto a informarmi sempre di più arricchendo il mio bagaglio
                     culturale e perfezionando le mie capacità comunicative</p>
+                <span class="content-cta">Guarda il canale <i class="fa fa-arrow-right"></i></span>
             </div>
 
-            <div id="sbs-card" class="content-card">
-                <img src="images/substack_logo.png" alt="Substack Logo" class="content-icon small">
-                <h3 class="content-platform">WRITECH</h3>
+            <div id="sbs-card" class="content-card" role="link" tabindex="0"
+                aria-label="Vai alla newsletter WriTech su Substack">
+                <div class="content-card-head">
+                    <img src="images/substack_logo.png" alt="Logo Substack" class="content-icon small">
+                    <h3 class="content-platform">WRITECH</h3>
+                </div>
                 <p>
                     Un progetto iniziato per condividere tool utili che trovavo per il web e che da qualche anno si è
-                    trasformato in uno <b>spazio di approfondimento sul mondo del digitale</b> e di internet. Parliamo
+                    trasformato in uno <strong>spazio di approfondimento sul mondo del digitale</strong> e di internet.
+                    Parliamo
                     della storia delle tecnologie, curiosità, notizie e riflessioni
                     personali.</p>
+                <span class="content-cta">Leggi su Substack <i class="fa fa-arrow-right"></i></span>
             </div>
         </div>
+        <div class="content-grid">
+            <div id="dday-card" class="content-card" role="link" tabindex="0" aria-label="Vai a DDay.it">
+                <div class="content-card-head">
+                    <img src="images/ddaylogo.png" alt="Logo DDay" class="content-icon small">
+                    <h3 class="content-platform">DDAY.IT</h3>
+                </div>
+                <p>
+                    Dal 2024 collaboro con DDay, una delle principali testate online sul mondo della tecnologia. Mi occupo della scrittura di news, guide e approfondimenti e della copertura di fiere di settore.</p>
+                <span class="content-cta">Leggi DDay.it <i class="fa fa-arrow-right"></i></span>
+            </div>
 
-        <div>
+            <div id="idealo-card" class="content-card" role="link" tabindex="0" aria-label="Vai a Idealo.it">
+                <div class="content-card-head">
+                    <img src="images/idealologo.png" alt="Logo Idealo" class="content-icon small">
+                    <h3 class="content-platform">IDEALO</h3>
+                </div>
+                <p>
+                    In qualità di esperto esterno redigo testi informativi su prodotti di networking (come router, modem 5G, NAS) per raccontare ai visitatori del sito le caratteristiche principali supportandoli nella scelta del prodotto più adatto alle loro esigenze.</p>
+                <span class="content-cta">Leggi i miei contributi su Idealo <i class="fa fa-arrow-right"></i></span>
+            </div>
+        </div>
+        </div>
+
+        <div class="tlc-block">
             <h2 class="titolo_paragrafo">Telecomunicazioni</h2>
-            <p style="margin: -10px 0 0 0; font-size: 18px">Negli anni mi sono specializzato nel settore delle
-                telecomunicazioni affinando sempre di più le mie capacità di <b>tradurre le complessità tecniche in
-                    contenuti coinvolgenti e accessibili a tutti.</b> Questo mi ha permesso di costruire una community
+            <p class="tlc-text">Negli anni mi sono specializzato nel settore delle
+                telecomunicazioni affinando sempre di più le mie capacità di <strong>tradurre le complessità tecniche in
+                    contenuti coinvolgenti e accessibili a tutti.</strong> Questo mi ha permesso di costruire una
+                community
                 appassionata a scoprire cosa c'è dietro una banale connessione internet.</p>
-            <p style="margin: 8px 0 -5px 0; font-size: 18px">Racconto come funzionano le infrastrutture FTTH, spiegando
+            <p class="tlc-text">Racconto come funzionano le infrastrutture FTTH, spiegando
                 come arriva la connessione nelle nostre case e
                 cercando di sensibilizzare il pubblico alla scelta della miglior connessione. Un tema che mi affascina
                 particolarmente sono le vecchie tecnologie, i primi piani di copertura e la loro evoluzione, e vecchi
@@ -197,25 +236,25 @@
             <div style="overflow-x: hidden;">
                 <div class="content-grid" id="carosello_tlc" style="display: flex; transition: transform 0.7s;">
                     <a href="https://youtu.be/gVFBe60QbTs" target="_blank"><img src="images/miniat_1.webp"
-                            class="project-card card-pointer"></a>
+                            class="project-card card-pointer" alt="Miniatura video Telecomunicazioni 1"></a>
                     <a href="https://youtu.be/0af_hBHN3_Y" target="_blank"><img src="images/miniat_2.webp"
-                            class="project-card card-pointer"></a>
+                            class="project-card card-pointer" alt="Miniatura video Telecomunicazioni 2"></a>
                     <a href="https://youtu.be/KsrQN9maA7Y" target="_blank"><img src="images/miniat_9.webp"
-                            class="project-card card-pointer"></a>
+                            class="project-card card-pointer" alt="Miniatura video Telecomunicazioni 9"></a>
                     <a href="https://youtu.be/CRmHBOEaV8E" target="_blank"><img src="images/miniat_4.webp"
-                            class="project-card card-pointer"></a>
+                            class="project-card card-pointer" alt="Miniatura video Telecomunicazioni 4"></a>
                     <a href="https://youtu.be/L4j50XwsBpo" target="_blank"><img src="images/miniat_5.webp"
-                            class="project-card card-pointer"></a>
+                            class="project-card card-pointer" alt="Miniatura video Telecomunicazioni 5"></a>
                     <a href="https://youtu.be/oCYRsKTW3Io" target="_blank"><img src="images/miniat_6.webp"
-                            class="project-card card-pointer"></a>
+                            class="project-card card-pointer" alt="Miniatura video Telecomunicazioni 6"></a>
                     <a href="https://youtu.be/9qDCczH-pUo" target="_blank"><img src="images/miniat_3.webp"
-                            class="project-card card-pointer"></a>
+                            class="project-card card-pointer" alt="Miniatura video Telecomunicazioni 3"></a>
                     <a href="https://youtu.be/T5mvx8GypxI" target="_blank"><img src="images/miniat_7.webp"
-                            class="project-card card-pointer"></a>
+                            class="project-card card-pointer" alt="Miniatura video Telecomunicazioni 7"></a>
                     <a href="https://youtu.be/BFhfBrMNxio" target="_blank"><img src="images/miniat_8.webp"
-                            class="project-card card-pointer"></a>
+                            class="project-card card-pointer" alt="Miniatura video Telecomunicazioni 8"></a>
                     <a href="https://youtu.be/tbX-zugQ5a8" target="_blank"><img src="images/miniat_10.webp"
-                            class="project-card card-pointer"></a>
+                            class="project-card card-pointer" alt="Miniatura video Telecomunicazioni 10"></a>
                 </div>
             </div>
         </div>
@@ -228,15 +267,15 @@
             <div class="infocontact">
                 <p>Se vuoi collaborare con me con un <strong style="color: #1e1d3c">video su YouTube</strong> o per un
                     <strong style="color: #e63946">progetto di Graphic Design</strong> scrivimi a <a
-                        href="mailto:hello@enricozoia.it">hello@enricozoia.it</a> o compila il modulo qui affianco!
+                        href="mailto:hello@enricozoia.it">hello@enricozoia.it</a> o compila il modulo qui sotto.
                 </p>
             </div>
             <div>
                 <form class="form" action="https://api.web3forms.com/submit" method="POST">
                     <input type="hidden" name="access_key" value="4cb3e4d8-e37f-4da0-840a-5029e4c5c095">
-                    <input type="text" name="nome" placeholder="Come ti chiami?"><br>
-                    <input type="email" name="email" placeholder="Qual è la tua mail?" required><br>
-                    <textarea name="messaggio" placeholder="Scrivi qui!" required></textarea><br>
+                    <input type="text" name="nome" placeholder="Come ti chiami?">
+                    <input type="email" name="email" placeholder="Qual è la tua mail?" required>
+                    <textarea name="messaggio" placeholder="Scrivi qui!" required></textarea>
                     <button type="submit" class="invia_button">Invia!</button>
                 </form>
             </div>
@@ -245,12 +284,12 @@
 
     <div class="footer">
         <nav class="links footerlink">
-            <a href="#about" style="margin-right: 15px">ABOUT ME</a>
-            <a href="#graphic" style="margin-right: 15px">GRAPHIC DESIGN</a>
-            <a href="#content" style="margin-right: 15px">CONTENT CREATION</a>
-            <a href="#contatto" style="margin-right: 15px">CONTATTI</a>
+            <a href="#about" class="nav-link" data-section="about">ABOUT ME</a>
+            <a href="#graphic" class="nav-link" data-section="graphic">GRAPHIC DESIGN</a>
+            <a href="#content" class="nav-link" data-section="content">CONTENT CREATION</a>
+            <a href="#contatto" class="nav-link" data-section="contatto">CONTATTI</a>
         </nav>
-        <p style="text-align: center; margin: 15px 0 0 0">Il sito è ancora in fase di sviluppo, potrebbero quindi
+        <p>Il sito è ancora in fase di sviluppo, potrebbero quindi
             esserci dei refusi o problemi sia nei contenuti che nella struttura. Nel caso troviate qualche bug vi invito
             a segnalarmelo :)</p>
         <div class="social-icon">
@@ -274,18 +313,18 @@
             </div>
             <div class="gallery-container">
                 <div class="gallery-slides">
-                    <img src="images\MB_1.webp" class="slide">
-                    <img src="images\MB_2.webp" class="slide">
-                    <img src="images\MB_3.webp" class="slide">
-                    <img src="images\MB_4.webp" class="slide">
-                    <img src="images\MB_5.webp" class="slide">
-                    <img src="images\MB_6.webp" class="slide">
-                    <img src="images\MB_7.webp" class="slide">
-                    <img src="images\MB_8.webp" class="slide">
-                    <img src="images\MB_9.webp" class="slide">
-                    <img src="images\MB_10.webp" class="slide">
-                    <img src="images\MB_11.webp" class="slide">
-                    <img src="images\MB_12.webp" class="slide">
+                    <img src="images/MB_1.webp" class="slide" alt="Maria Bambina - immagine 1">
+                    <img src="images/MB_2.webp" class="slide" alt="Maria Bambina - immagine 2">
+                    <img src="images/MB_3.webp" class="slide" alt="Maria Bambina - immagine 3">
+                    <img src="images/MB_4.webp" class="slide" alt="Maria Bambina - immagine 4">
+                    <img src="images/MB_5.webp" class="slide" alt="Maria Bambina - immagine 5">
+                    <img src="images/MB_6.webp" class="slide" alt="Maria Bambina - immagine 6">
+                    <img src="images/MB_7.webp" class="slide" alt="Maria Bambina - immagine 7">
+                    <img src="images/MB_8.webp" class="slide" alt="Maria Bambina - immagine 8">
+                    <img src="images/MB_9.webp" class="slide" alt="Maria Bambina - immagine 9">
+                    <img src="images/MB_10.webp" class="slide" alt="Maria Bambina - immagine 10">
+                    <img src="images/MB_11.webp" class="slide" alt="Maria Bambina - immagine 11">
+                    <img src="images/MB_12.webp" class="slide" alt="Maria Bambina - immagine 12">
                 </div>
                 <!-- Frecce per controllare manualmente -->
                 <a class="prev" onclick="changeSlide(-1, 'mariabambina')">&#10094;</a>
@@ -319,11 +358,11 @@
             </div>
             <div class="gallery-container">
                 <div class="gallery-slides">
-                    <img src="images\pb_0.webp" class="slide">
-                    <img src="images\pb_1.webp" class="slide">
-                    <img src="images\pb_2.webp" class="slide">
-                    <img src="images\pb_3.webp" class="slide">
-                    <img src="images\pb_4.webp" class="slide">
+                    <img src="images/pb_0.webp" class="slide" alt="Personal Branding - immagine 1">
+                    <img src="images/pb_1.webp" class="slide" alt="Personal Branding - immagine 2">
+                    <img src="images/pb_2.webp" class="slide" alt="Personal Branding - immagine 3">
+                    <img src="images/pb_3.webp" class="slide" alt="Personal Branding - immagine 4">
+                    <img src="images/pb_4.webp" class="slide" alt="Personal Branding - immagine 5">
                 </div>
                 <!-- Frecce per controllare manualmente -->
                 <a class="prev" onclick="changeSlide(-1, 'personal-branding')">&#10094;</a>
@@ -355,8 +394,8 @@
             </div>
             <div class="gallery-container">
                 <div class="gallery-slides">
-                    <img src="images\Oliv_2.webp" class="slide">
-                    <img src="images\Oliv_3.webp" class="slide">
+                    <img src="images/Oliv_2.webp" class="slide" alt="Brochure Olivetti - immagine 1">
+                    <img src="images/Oliv_3.webp" class="slide" alt="Brochure Olivetti - immagine 2">
                 </div>
                 <!-- Frecce per controllare manualmente -->
                 <a class="prev" onclick="changeSlide(-1, 'brochure-olivetti')">&#10094;</a>
@@ -377,22 +416,22 @@
             </div>
             <div class="gallery-container">
                 <div class="gallery-slides">
-                    <img src="images\Quotid_01.webp" class="slide">
-                    <img src="images\Quotid_02.webp" class="slide">
-                    <img src="images\Quotid_03.webp" class="slide">
-                    <img src="images\Quotid_04.webp" class="slide">
-                    <img src="images\Quotid_05.webp" class="slide">
-                    <img src="images\Quotid_06.webp" class="slide">
-                    <img src="images\Quotid_07.webp" class="slide">
-                    <img src="images\Quotid_08.webp" class="slide">
-                    <img src="images\Quotid_09.webp" class="slide">
-                    <img src="images\Quotid_10.webp" class="slide">
-                    <img src="images\Quotid_11.webp" class="slide">
-                    <img src="images\Quotid_12.webp" class="slide">
-                    <img src="images\Quotid_13.webp" class="slide">
-                    <img src="images\Quotid_14.webp" class="slide">
-                    <img src="images\Quotid_15.webp" class="slide">
-                    <img src="images\Quotid_16.webp" class="slide">
+                    <img src="images/Quotid_01.webp" class="slide" alt="Redesign di un Quotidiano - immagine 1">
+                    <img src="images/Quotid_02.webp" class="slide" alt="Redesign di un Quotidiano - immagine 2">
+                    <img src="images/Quotid_03.webp" class="slide" alt="Redesign di un Quotidiano - immagine 3">
+                    <img src="images/Quotid_04.webp" class="slide" alt="Redesign di un Quotidiano - immagine 4">
+                    <img src="images/Quotid_05.webp" class="slide" alt="Redesign di un Quotidiano - immagine 5">
+                    <img src="images/Quotid_06.webp" class="slide" alt="Redesign di un Quotidiano - immagine 6">
+                    <img src="images/Quotid_07.webp" class="slide" alt="Redesign di un Quotidiano - immagine 7">
+                    <img src="images/Quotid_08.webp" class="slide" alt="Redesign di un Quotidiano - immagine 8">
+                    <img src="images/Quotid_09.webp" class="slide" alt="Redesign di un Quotidiano - immagine 9">
+                    <img src="images/Quotid_10.webp" class="slide" alt="Redesign di un Quotidiano - immagine 10">
+                    <img src="images/Quotid_11.webp" class="slide" alt="Redesign di un Quotidiano - immagine 11">
+                    <img src="images/Quotid_12.webp" class="slide" alt="Redesign di un Quotidiano - immagine 12">
+                    <img src="images/Quotid_13.webp" class="slide" alt="Redesign di un Quotidiano - immagine 13">
+                    <img src="images/Quotid_14.webp" class="slide" alt="Redesign di un Quotidiano - immagine 14">
+                    <img src="images/Quotid_15.webp" class="slide" alt="Redesign di un Quotidiano - immagine 15">
+                    <img src="images/Quotid_16.webp" class="slide" alt="Redesign di un Quotidiano - immagine 16">
                 </div>
                 <!-- Frecce per controllare manualmente -->
                 <a class="prev" onclick="changeSlide(-1, 'quotidiano')">&#10094;</a>
@@ -404,8 +443,9 @@
                 <p>Nel corso degli anni i quotidiani sono, chi più e chi meno, costantemente evoluti dal punto di vista
                     del design grafico diventando più moderni senza tuttavia mai staccarsi dalla classica impostazione
                     della prima pagina, che spesso risulta caotica e confusionaria, soprattutto per chi non è abituato a
-                    leggerne uno. <b>In un mercato già in difficoltà, questo diventa un ulteriore disincentivo alla
-                        lettura dei giornali.</b><br>Ho quindi deciso di progettare l'identità visiva di un ipotetico
+                    leggerne uno. <strong>In un mercato già in difficoltà, questo diventa un ulteriore disincentivo alla
+                        lettura dei giornali.</strong><br>Ho quindi deciso di progettare l'identità visiva di un
+                    ipotetico
                     nuovo quotidiano affinché potesse essere più moderna, accattivante e soprattutto meno "oppressiva".
                     È stata anche l'occasione per integrare soluzioni tecnologiche innovative per modernizzare questo
                     settore. <br><i>Nelle slide sovrastanti racconto tutto l'iter progettuale.</i></p>
@@ -423,17 +463,17 @@
             </div>
             <div class="gallery-container">
                 <div class="gallery-slides">
-                    <img src="images\DM_1.webp" class="slide">
-                    <img src="images\DM_2.webp" class="slide">
-                    <img src="images\DM_3.webp" class="slide">
-                    <img src="images\DM_4.webp" class="slide">
-                    <img src="images\DM_5.webp" class="slide">
-                    <img src="images\DM_6.webp" class="slide">
-                    <img src="images\DM_7.webp" class="slide">
-                    <img src="images\DM_8.webp" class="slide">
-                    <img src="images\DM_9.webp" class="slide">
-                    <img src="images\DM_10.webp" class="slide">
-                    <img src="images\DM_11.webp" class="slide">
+                    <img src="images/DM_1.webp" class="slide" alt="DolceMilano - immagine 1">
+                    <img src="images/DM_2.webp" class="slide" alt="DolceMilano - immagine 2">
+                    <img src="images/DM_3.webp" class="slide" alt="DolceMilano - immagine 3">
+                    <img src="images/DM_4.webp" class="slide" alt="DolceMilano - immagine 4">
+                    <img src="images/DM_5.webp" class="slide" alt="DolceMilano - immagine 5">
+                    <img src="images/DM_6.webp" class="slide" alt="DolceMilano - immagine 6">
+                    <img src="images/DM_7.webp" class="slide" alt="DolceMilano - immagine 7">
+                    <img src="images/DM_8.webp" class="slide" alt="DolceMilano - immagine 8">
+                    <img src="images/DM_9.webp" class="slide" alt="DolceMilano - immagine 9">
+                    <img src="images/DM_10.webp" class="slide" alt="DolceMilano - immagine 10">
+                    <img src="images/DM_11.webp" class="slide" alt="DolceMilano - immagine 11">
                 </div>
                 <!-- Frecce per controllare manualmente -->
                 <a class="prev" onclick="changeSlide(-1, 'dolcemilano')">&#10094;</a>
@@ -469,14 +509,22 @@
             </div>
             <div class="gallery-container">
                 <div class="gallery-slides">
-                    <img src="images\Sociosf_01.webp" class="slide">
-                    <img src="images\Sociosf_02.webp" class="slide">
-                    <img src="images\Sociosf_03.webp" class="slide">
-                    <img src="images\Sociosf_04.webp" class="slide">
-                    <img src="images\Sociosf_05.webp" class="slide">
-                    <img src="images\Sociosf_06.webp" class="slide">
-                    <img src="images\Sociosf_07.webp" class="slide">
-                    <img src="images\Sociosf_08.webp" class="slide">
+                    <img src="images/Sociosf_01.webp" class="slide"
+                        alt="La Famiglia al Centro dell'Ambito - immagine 1">
+                    <img src="images/Sociosf_02.webp" class="slide"
+                        alt="La Famiglia al Centro dell'Ambito - immagine 2">
+                    <img src="images/Sociosf_03.webp" class="slide"
+                        alt="La Famiglia al Centro dell'Ambito - immagine 3">
+                    <img src="images/Sociosf_04.webp" class="slide"
+                        alt="La Famiglia al Centro dell'Ambito - immagine 4">
+                    <img src="images/Sociosf_05.webp" class="slide"
+                        alt="La Famiglia al Centro dell'Ambito - immagine 5">
+                    <img src="images/Sociosf_06.webp" class="slide"
+                        alt="La Famiglia al Centro dell'Ambito - immagine 6">
+                    <img src="images/Sociosf_07.webp" class="slide"
+                        alt="La Famiglia al Centro dell'Ambito - immagine 7">
+                    <img src="images/Sociosf_08.webp" class="slide"
+                        alt="La Famiglia al Centro dell'Ambito - immagine 8">
                 </div>
                 <!-- Frecce per controllare manualmente -->
                 <a class="prev" onclick="changeSlide(-1, 'sociosfera')">&#10094;</a>
@@ -509,8 +557,10 @@
             </div>
             <div class="gallery-container">
                 <div class="gallery-slides">
-                    <img src="images\GO_01.webp" class="slide">
-                    <img src="images\GO_02.webp" class="slide">
+                    <img src="images/GO_01.webp" class="slide"
+                        alt="Grafica, Ovunque - Il Graphic Design Spiegato Semplice - immagine 1">
+                    <img src="images/GO_02.webp" class="slide"
+                        alt="Grafica, Ovunque - Il Graphic Design Spiegato Semplice - immagine 2">
                 </div>
                 <!-- Frecce per controllare manualmente -->
                 <a class="prev" onclick="changeSlide(-1, 'grafica-ovunque')">&#10094;</a>
@@ -551,12 +601,18 @@
             </div>
             <div class="gallery-container">
                 <div class="gallery-slides">
-                    <img src="images\Camugnano_1.webp" class="slide">
-                    <img src="images\Camugnano_2.webp" class="slide">
-                    <img src="images\Camugnano_3.webp" class="slide">
-                    <img src="images\Camugnano_4.webp" class="slide">
-                    <img src="images\Camugnano_5.webp" class="slide">
-                    <img src="images\Camugnano_6.webp" class="slide">
+                    <img src="images/Camugnano_1.webp" class="slide"
+                        alt="Mappa della Comunità di Camugnano - immagine 1">
+                    <img src="images/Camugnano_2.webp" class="slide"
+                        alt="Mappa della Comunità di Camugnano - immagine 2">
+                    <img src="images/Camugnano_3.webp" class="slide"
+                        alt="Mappa della Comunità di Camugnano - immagine 3">
+                    <img src="images/Camugnano_4.webp" class="slide"
+                        alt="Mappa della Comunità di Camugnano - immagine 4">
+                    <img src="images/Camugnano_5.webp" class="slide"
+                        alt="Mappa della Comunità di Camugnano - immagine 5">
+                    <img src="images/Camugnano_6.webp" class="slide"
+                        alt="Mappa della Comunità di Camugnano - immagine 6">
                 </div>
                 <!-- Frecce per controllare manualmente -->
                 <a class="prev" onclick="changeSlide(-1, 'mappa-camugnano')">&#10094;</a>
@@ -584,7 +640,8 @@
             </div>
             <div class="gallery-container">
                 <div class="gallery-slides">
-                    <img src="images\Avis.jpg" class="slide">
+                    <img src="images/Avis.jpg" class="slide"
+                        alt="Manifesto Auguri Natalizi per AVIS Lissone - immagine 1">
                 </div>
                 <div class="dots-container">
                 </div>
@@ -620,25 +677,25 @@
             </div>
             <div class="gallery-container">
                 <div class="gallery-slides">
-                    <img src="images\Ancona_1.jpg" class="slide">
-                    <img src="images\Ancona_2.jpg" class="slide">
-                    <img src="images\Ancona_3.jpg" class="slide">
-                    <img src="images\Ancona_4.jpg" class="slide">
-                    <img src="images\Ancona_5.jpg" class="slide">
-                    <img src="images\Ancona_6.jpg" class="slide">
-                    <img src="images\Ancona_7.jpg" class="slide">
-                    <img src="images\Ancona_8.jpg" class="slide">
-                    <img src="images\Ancona_9.jpg" class="slide">
-                    <img src="images\Ancona_10.jpg" class="slide">
-                    <img src="images\Ancona_11.jpg" class="slide">
-                    <img src="images\Ancona_12.jpg" class="slide">
-                    <img src="images\Ancona_13.jpg" class="slide">
-                    <img src="images\Ancona_14.jpg" class="slide">
-                    <img src="images\Ancona_15.jpg" class="slide">
-                    <img src="images\Ancona_16.jpg" class="slide">
-                    <img src="images\Ancona_17.jpg" class="slide">
-                    <img src="images\Ancona_18.jpg" class="slide">
-                    <img src="images\Ancona_19.jpg" class="slide">
+                    <img src="images/Ancona_1.jpg" class="slide" alt="City Branding Città di Ancona - immagine 1">
+                    <img src="images/Ancona_2.jpg" class="slide" alt="City Branding Città di Ancona - immagine 2">
+                    <img src="images/Ancona_3.jpg" class="slide" alt="City Branding Città di Ancona - immagine 3">
+                    <img src="images/Ancona_4.jpg" class="slide" alt="City Branding Città di Ancona - immagine 4">
+                    <img src="images/Ancona_5.jpg" class="slide" alt="City Branding Città di Ancona - immagine 5">
+                    <img src="images/Ancona_6.jpg" class="slide" alt="City Branding Città di Ancona - immagine 6">
+                    <img src="images/Ancona_7.jpg" class="slide" alt="City Branding Città di Ancona - immagine 7">
+                    <img src="images/Ancona_8.jpg" class="slide" alt="City Branding Città di Ancona - immagine 8">
+                    <img src="images/Ancona_9.jpg" class="slide" alt="City Branding Città di Ancona - immagine 9">
+                    <img src="images/Ancona_10.jpg" class="slide" alt="City Branding Città di Ancona - immagine 10">
+                    <img src="images/Ancona_11.jpg" class="slide" alt="City Branding Città di Ancona - immagine 11">
+                    <img src="images/Ancona_12.jpg" class="slide" alt="City Branding Città di Ancona - immagine 12">
+                    <img src="images/Ancona_13.jpg" class="slide" alt="City Branding Città di Ancona - immagine 13">
+                    <img src="images/Ancona_14.jpg" class="slide" alt="City Branding Città di Ancona - immagine 14">
+                    <img src="images/Ancona_15.jpg" class="slide" alt="City Branding Città di Ancona - immagine 15">
+                    <img src="images/Ancona_16.jpg" class="slide" alt="City Branding Città di Ancona - immagine 16">
+                    <img src="images/Ancona_17.jpg" class="slide" alt="City Branding Città di Ancona - immagine 17">
+                    <img src="images/Ancona_18.jpg" class="slide" alt="City Branding Città di Ancona - immagine 18">
+                    <img src="images/Ancona_19.jpg" class="slide" alt="City Branding Città di Ancona - immagine 19">
                 </div>
                 <a class="prev" onclick="changeSlide(-1, 'ancona')">&#10094;</a>
                 <a class="next" onclick="changeSlide(1, 'ancona')">&#10095;</a>
@@ -646,9 +703,17 @@
                 </div>
             </div>
             <div class="descrizmodal">
-                <p>Realizzazione, sul modello del <a href="https://aiap.it/bando-per-il-city-branding-della-citta-di-ancona/" target="_blank">contest promosso da AIAP</a>, di un City Branding per la città di Ancona corredato da un piano di comunicazione della durata di 2 anni per valorizzare il territorio e l'identità della città, proponendola come destinazione autentica e innovativa rivolgendosi sia a potenziali turisti che ai cittadini. <br>Il simbolo progettato racchiude i tre valori alla base di questa poliedrica città: Anima,
-Costa e Natura, ognuno caratterizzato da una forma e un colore. Grazie alla sua modularità, risulta
-molto versatile e dinamico. <br> Il piano di comunicazione integrato - suddiviso per fase di teaser, lancio, consolidamento e recall - rispecchia lo spirito vivace della città unendo installazioni e attività sul territorio a prodotti editoriali e campagne di marketing digitale.</p>
+                <p>Realizzazione, sul modello del <a
+                        href="https://aiap.it/bando-per-il-city-branding-della-citta-di-ancona/" target="_blank">contest
+                        promosso da AIAP</a>, di un City Branding per la città di Ancona corredato da un piano di
+                    comunicazione della durata di 2 anni per valorizzare il territorio e l'identità della città,
+                    proponendola come destinazione autentica e innovativa rivolgendosi sia a potenziali turisti che ai
+                    cittadini. <br>Il simbolo progettato racchiude i tre valori alla base di questa poliedrica città:
+                    Anima,
+                    Costa e Natura, ognuno caratterizzato da una forma e un colore. Grazie alla sua modularità, risulta
+                    molto versatile e dinamico. <br> Il piano di comunicazione integrato - suddiviso per fase di teaser,
+                    lancio, consolidamento e recall - rispecchia lo spirito vivace della città unendo installazioni e
+                    attività sul territorio a prodotti editoriali e campagne di marketing digitale.</p>
             </div>
         </div>
     </div>
@@ -660,11 +725,15 @@ molto versatile e dinamico. <br> Il piano di comunicazione integrato - suddiviso
         const mobileMenu = document.getElementById('mobile-menu');
 
         menuIcon.addEventListener('click', () => {
-            mobileMenu.classList.toggle('open');
+            const isOpen = mobileMenu.classList.toggle('open');
+            menuIcon.setAttribute('aria-expanded', isOpen);
+            mobileMenu.setAttribute('aria-hidden', !isOpen);
         });
 
         menuLink.addEventListener('click', () => {
             mobileMenu.classList.remove('open');
+            menuIcon.setAttribute('aria-expanded', false);
+            mobileMenu.setAttribute('aria-hidden', true);
         });
 
         document.addEventListener('click', closeMenuOnClickOutside);
@@ -675,8 +744,29 @@ molto versatile e dinamico. <br> Il piano di comunicazione integrato - suddiviso
 
             if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
                 menu.classList.remove('open');
+                menuIcon.setAttribute('aria-expanded', false);
+                menu.setAttribute('aria-hidden', true);
             }
         }
+
+        // Evidenzia il link della sezione attualmente visibile
+        const navSections = ['about', 'graphic', 'content', 'contatto']
+            .map(id => document.getElementById(id))
+            .filter(Boolean);
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        const navObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    navLinks.forEach(link => {
+                        link.classList.toggle('active', link.dataset.section === id);
+                    });
+                }
+            });
+        }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+
+        navSections.forEach(section => navObserver.observe(section));
 
         function openModal(modalId) {
             const modal = document.getElementById(modalId);
@@ -841,7 +931,17 @@ molto versatile e dinamico. <br> Il piano di comunicazione integrato - suddiviso
                 observer.observe(card); // Avvia l'osservazione per ogni elemento
             });
 
-
+            // Rende le card del portfolio navigabili da tastiera
+            document.querySelectorAll('.portfolio .project-card.card-pointer').forEach(card => {
+                card.setAttribute('tabindex', '0');
+                card.setAttribute('role', 'button');
+                card.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault();
+                        card.click();
+                    }
+                });
+            });
         });
         let mybutton = document.getElementById("topbutton");
 
@@ -902,11 +1002,26 @@ molto versatile e dinamico. <br> Il piano di comunicazione integrato - suddiviso
             }
         });
 
-        document.getElementById('yt-card').addEventListener('click', function () {
-            window.open('https://go.enricozoia.it/yt', '_blank');
-        });
-        document.getElementById('sbs-card').addEventListener('click', function () {
-            window.open('https://go.enricozoia.it/substack', '_blank');
+        function openInNewTab(url) {
+            window.open(url, '_blank');
+        }
+
+        const cardLinks = {
+            'yt-card': 'https://go.enricozoia.it/yt',
+            'sbs-card': 'https://go.enricozoia.it/substack',
+            'idealo-card': 'https://go.enricozoia.it/idealo',
+            'dday-card': 'https://go.enricozoia.it/dday'
+        };
+
+        Object.entries(cardLinks).forEach(([id, url]) => {
+            const card = document.getElementById(id);
+            card.addEventListener('click', () => openInNewTab(url));
+            card.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    openInNewTab(url);
+                }
+            });
         });
 
 
