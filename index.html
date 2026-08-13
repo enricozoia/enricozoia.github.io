@@ -84,26 +84,19 @@
         <h2 class="sottotitolo">Graphic Design</h2>
         <p class="sotto-sottotitolo">Clicca sui progetti per scoprire di più!</p>
         <div class="portfolio">
-            <div class="project-card card-pointer" onclick="openModal('mariabambina')">
+            <div class="project-card card-pointer" onclick="window.location.href = 'MariaBambina'">
                 <img src="images/MB.webp" class="project-image" alt="Anteprima progetto: Maria Bambina">
                 <div class="project-info">
                     <h3 class="project-title">Maria Bambina</h3>
                     <p class="project-count">BRANDING</p>
                 </div>
             </div>
-            <div class="project-card card-pointer" onclick="openModal('quotidiano')">
+            <div class="project-card card-pointer" onclick="window.location.href = 'RedesignQuotidiano'">
                 <img src="images/Quotid_Cover.webp" class="project-image"
                     alt="Anteprima progetto: Redesign di un Quotidiano">
                 <div class="project-info">
                     <h3 class="project-title">Redesign di un Quotidiano</h3>
                     <p class="project-count">EDITORIA</p>
-                </div>
-            </div>
-            <div class="project-card card-pointer" onclick="openModal('personal-branding')">
-                <img src="images/pb_0.webp" class="project-image" alt="Anteprima progetto: Personal Branding">
-                <div class="project-info">
-                    <h3 class="project-title">Personal Branding</h3>
-                    <p class="project-count">BRANDING</p>
                 </div>
             </div>
             <div class="project-card card-pointer" onclick="window.location.href = 'Ancona'">
@@ -114,22 +107,14 @@
                     <p class="project-count">BRANDING</p>
                 </div>
             </div>
-            <div class="project-card card-pointer" onclick="openModal('dolcemilano')">
+            <div class="project-card card-pointer" onclick="window.location.href = 'Dolcemilano'">
                 <img src="images/DM_0.webp" class="project-image" alt="Anteprima progetto: Dolcemilano">
                 <div class="project-info">
                     <h3 class="project-title">Dolcemilano</h3>
                     <p class="project-count">BRANDING</p>
                 </div>
             </div>
-            <div class="project-card card-pointer" onclick="openModal('sociosfera')">
-                <img src="images/Sociosf_0.webp" class="project-image"
-                    alt="Anteprima progetto: La Famiglia al Centro dell'Ambito">
-                <div class="project-info">
-                    <h3 class="project-title">La Famiglia al Centro dell'Ambito</h3>
-                    <p class="project-count">BRANDING</p>
-                </div>
-            </div>
-            <div class="project-card card-pointer" onclick="openModal('manifestoavis')">
+            <div class="project-card card-pointer" onclick="window.location.href = 'Avis'">
                 <img src="images/Avis.jpg" class="project-image"
                     alt="Anteprima progetto: Manifesto Auguri Natalizi AVIS Lissone">
                 <div class="project-info">
@@ -138,15 +123,7 @@
                 </div>
             </div>
 
-            <div class="project-card card-pointer" onclick="openModal('mappa-camugnano')">
-                <img src="images/Camugnano_0.webp" class="project-image"
-                    alt="Anteprima progetto: Mappa della Comunità di Camugnano">
-                <div class="project-info">
-                    <h3 class="project-title">Mappa della Comunità di Camugnano</h3>
-                    <p class="project-count">EDITORIA</p>
-                </div>
-            </div>
-            <div class="project-card card-pointer" onclick="openModal('grafica-ovunque')">
+            <div class="project-card card-pointer" onclick="window.location.href = 'GraficaOvunque'">
                 <img src="images/GO_0.webp" class="project-image" alt="Anteprima progetto: Grafica, Ovunque">
                 <div class="project-info">
                     <h3 class="project-title">Grafica, Ovunque</h3>
@@ -311,420 +288,6 @@
     </div>
 
     <button onclick="topFunction()" id="topbutton"><i class="arrow-up"></i></button>
-
-    <div id="mariabambina" class="modal">
-        <div id="modal-content" class="modal-content">
-            <span class="close" onclick="closeModal('mariabambina')">&times;</span>
-            <div class="titolomodal">
-                <h2>Maria Bambina</h2>
-                <h3>LOGOTIPO</h3>
-            </div>
-            <div class="gallery-container">
-                <div class="gallery-slides">
-                    <img src="images/MB_1.webp" class="slide" alt="Maria Bambina - immagine 1">
-                    <img src="images/MB_2.webp" class="slide" alt="Maria Bambina - immagine 2">
-                    <img src="images/MB_3.webp" class="slide" alt="Maria Bambina - immagine 3">
-                    <img src="images/MB_4.webp" class="slide" alt="Maria Bambina - immagine 4">
-                    <img src="images/MB_5.webp" class="slide" alt="Maria Bambina - immagine 5">
-                    <img src="images/MB_6.webp" class="slide" alt="Maria Bambina - immagine 6">
-                    <img src="images/MB_7.webp" class="slide" alt="Maria Bambina - immagine 7">
-                    <img src="images/MB_8.webp" class="slide" alt="Maria Bambina - immagine 8">
-                    <img src="images/MB_9.webp" class="slide" alt="Maria Bambina - immagine 9">
-                    <img src="images/MB_10.webp" class="slide" alt="Maria Bambina - immagine 10">
-                    <img src="images/MB_11.webp" class="slide" alt="Maria Bambina - immagine 11">
-                    <img src="images/MB_12.webp" class="slide" alt="Maria Bambina - immagine 12">
-                </div>
-                <!-- Frecce per controllare manualmente -->
-                <a class="prev" onclick="changeSlide(-1, 'mariabambina')">&#10094;</a>
-                <a class="next" onclick="changeSlide(1, 'mariabambina')">&#10095;</a>
-
-                <div class="dots-container">
-                </div>
-            </div>
-            <div class="descrizmodal">
-                <p>Realizzazione di un logo per la Scuola dell'Infanzia Paritaria Maria Bambina di
-                    Lissone (MB) nell'ambito di un concorso da loro indetto per rinnovare la propria identità visiva
-                    dopo 100 anni di storia. Il logo da me ideato è stato selezionato come vincitore e utilizzato nei
-                    loro canali comunicativi.</p>
-                <p>Il segno ideato risulta minimale, moderno e adatto ad un contesto infantile mantenendo tuttavia una
-                    nota istituzionale e svariati riferimenti al mondo educativo. Le tre figure rappresentate si
-                    intersecano tra di loro come un puzzle stabilendo le relazioni interpersonali che si creano
-                    nell'ambiente scolastico. I volti sono rappresentati con tre forme diverse per simboleggiare i
-                    diversi giochi usati dai bambini (costruzioni, tangram) ma anche la diversità e l'unicità di ogni
-                    individuo.</p>
-            </div>
-        </div>
-    </div>
-
-
-    <div id="personal-branding" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('personal-branding')">&times;</span>
-            <div class="titolomodal">
-                <h2>Personal Branding</h2>
-                <h3>LOGOTIPO</h3>
-            </div>
-            <div class="gallery-container">
-                <div class="gallery-slides">
-                    <img src="images/pb_0.webp" class="slide" alt="Personal Branding - immagine 1">
-                    <img src="images/pb_1.webp" class="slide" alt="Personal Branding - immagine 2">
-                    <img src="images/pb_2.webp" class="slide" alt="Personal Branding - immagine 3">
-                    <img src="images/pb_3.webp" class="slide" alt="Personal Branding - immagine 4">
-                    <img src="images/pb_4.webp" class="slide" alt="Personal Branding - immagine 5">
-                </div>
-                <!-- Frecce per controllare manualmente -->
-                <a class="prev" onclick="changeSlide(-1, 'personal-branding')">&#10094;</a>
-                <a class="next" onclick="changeSlide(1, 'personal-branding')">&#10095;</a>
-
-                <div class="dots-container">
-                </div>
-            </div>
-            <div class="descrizmodal">
-                <p>Realizzazione di una semplice identità visiva per la mia persona, che possa rispecchiarmi e
-                    accompagnare i miei progetti con coerenza visiva.</p>
-                <p>Le iniziali del mio nome e cognome sono state unite in un unico pittogramma costruito partendo da una
-                    griglia modulare di quadrati. Uno di questi è stato lasciato isolato nell'angolo a rappresentare le
-                    mie due passioni, ha infatti un doppio significato: i pixel, quindi la grafica, e l'estensioni dei
-                    siti web, ovvero il mondo TLC. La rigidità del simbolo, alla quale contribuisce anche la tinta scura
-                    di blu, viene smorzata dalla diagonale che conferisce dinamicità e dal font scelto. Quest'ultimo
-                    infatti risulta molto informale, innovativo e "divertente", caratteristiche della mia personalità.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div id="brochure-olivetti" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('brochure-olivetti')">&times;</span>
-            <div class="titolomodal">
-                <h2>Brochure Olivetti</h2>
-                <h3>EDITORIA</h3>
-            </div>
-            <div class="gallery-container">
-                <div class="gallery-slides">
-                    <img src="images/Oliv_2.webp" class="slide" alt="Brochure Olivetti - immagine 1">
-                    <img src="images/Oliv_3.webp" class="slide" alt="Brochure Olivetti - immagine 2">
-                </div>
-                <!-- Frecce per controllare manualmente -->
-                <a class="prev" onclick="changeSlide(-1, 'brochure-olivetti')">&#10094;</a>
-                <a class="next" onclick="changeSlide(1, 'brochure-olivetti')">&#10095;</a>
-
-                <div class="dots-container">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="quotidiano" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('quotidiano')">&times;</span>
-            <div class="titolomodal">
-                <h2>Redesign di un Quotidiano</h2>
-                <h3>EDITORIA</h3>
-            </div>
-            <div class="gallery-container">
-                <div class="gallery-slides">
-                    <img src="images/Quotid_01.webp" class="slide" alt="Redesign di un Quotidiano - immagine 1">
-                    <img src="images/Quotid_02.webp" class="slide" alt="Redesign di un Quotidiano - immagine 2">
-                    <img src="images/Quotid_03.webp" class="slide" alt="Redesign di un Quotidiano - immagine 3">
-                    <img src="images/Quotid_04.webp" class="slide" alt="Redesign di un Quotidiano - immagine 4">
-                    <img src="images/Quotid_05.webp" class="slide" alt="Redesign di un Quotidiano - immagine 5">
-                    <img src="images/Quotid_06.webp" class="slide" alt="Redesign di un Quotidiano - immagine 6">
-                    <img src="images/Quotid_07.webp" class="slide" alt="Redesign di un Quotidiano - immagine 7">
-                    <img src="images/Quotid_08.webp" class="slide" alt="Redesign di un Quotidiano - immagine 8">
-                    <img src="images/Quotid_09.webp" class="slide" alt="Redesign di un Quotidiano - immagine 9">
-                    <img src="images/Quotid_10.webp" class="slide" alt="Redesign di un Quotidiano - immagine 10">
-                    <img src="images/Quotid_11.webp" class="slide" alt="Redesign di un Quotidiano - immagine 11">
-                    <img src="images/Quotid_12.webp" class="slide" alt="Redesign di un Quotidiano - immagine 12">
-                    <img src="images/Quotid_13.webp" class="slide" alt="Redesign di un Quotidiano - immagine 13">
-                    <img src="images/Quotid_14.webp" class="slide" alt="Redesign di un Quotidiano - immagine 14">
-                    <img src="images/Quotid_15.webp" class="slide" alt="Redesign di un Quotidiano - immagine 15">
-                    <img src="images/Quotid_16.webp" class="slide" alt="Redesign di un Quotidiano - immagine 16">
-                </div>
-                <!-- Frecce per controllare manualmente -->
-                <a class="prev" onclick="changeSlide(-1, 'quotidiano')">&#10094;</a>
-                <a class="next" onclick="changeSlide(1, 'quotidiano')">&#10095;</a>
-
-                <div class="dots-container"></div>
-            </div>
-            <div class="descrizmodal">
-                <p>Nel corso degli anni i quotidiani sono, chi più e chi meno, costantemente evoluti dal punto di vista
-                    del design grafico diventando più moderni senza tuttavia mai staccarsi dalla classica impostazione
-                    della prima pagina, che spesso risulta caotica e confusionaria, soprattutto per chi non è abituato a
-                    leggerne uno. <strong>In un mercato già in difficoltà, questo diventa un ulteriore disincentivo alla
-                        lettura dei giornali.</strong><br>Ho quindi deciso di progettare l'identità visiva di un
-                    ipotetico
-                    nuovo quotidiano affinché potesse essere più moderna, accattivante e soprattutto meno "oppressiva".
-                    È stata anche l'occasione per integrare soluzioni tecnologiche innovative per modernizzare questo
-                    settore. <br><i>Nelle slide sovrastanti racconto tutto l'iter progettuale.</i></p>
-            </div>
-
-        </div>
-    </div>
-
-    <div id="dolcemilano" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('dolcemilano')">&times;</span>
-            <div class="titolomodal">
-                <h2>DolceMilano</h2>
-                <h3>LOGOTIPO</h3>
-            </div>
-            <div class="gallery-container">
-                <div class="gallery-slides">
-                    <img src="images/DM_1.webp" class="slide" alt="DolceMilano - immagine 1">
-                    <img src="images/DM_2.webp" class="slide" alt="DolceMilano - immagine 2">
-                    <img src="images/DM_3.webp" class="slide" alt="DolceMilano - immagine 3">
-                    <img src="images/DM_4.webp" class="slide" alt="DolceMilano - immagine 4">
-                    <img src="images/DM_5.webp" class="slide" alt="DolceMilano - immagine 5">
-                    <img src="images/DM_6.webp" class="slide" alt="DolceMilano - immagine 6">
-                    <img src="images/DM_7.webp" class="slide" alt="DolceMilano - immagine 7">
-                    <img src="images/DM_8.webp" class="slide" alt="DolceMilano - immagine 8">
-                    <img src="images/DM_9.webp" class="slide" alt="DolceMilano - immagine 9">
-                    <img src="images/DM_10.webp" class="slide" alt="DolceMilano - immagine 10">
-                    <img src="images/DM_11.webp" class="slide" alt="DolceMilano - immagine 11">
-                </div>
-                <!-- Frecce per controllare manualmente -->
-                <a class="prev" onclick="changeSlide(-1, 'dolcemilano')">&#10094;</a>
-                <a class="next" onclick="changeSlide(1, 'dolcemilano')">&#10095;</a>
-
-                <div class="dots-container">
-                </div>
-            </div>
-            <div class="descrizmodal">
-                <p>Realizzazione di un logotipo con relativa immagine coordinate per
-                    un'ipotetica
-                    pasticceria di alto livello con 3 punti vendita nel centro di Milano.</p>
-                <p>Il segno ideato rappresenta un croissant, prodotto di punta della pasticceria, che grazie alla
-                    disposizione verticale rimanda alla lettera D. Per il naming è stato scelto un font serif molto
-                    caratterizzante con aste modulate e curve morbide mentre per il payoff un sans serif
-                    estremamente
-                    lineare e con elevata spaziatura; insieme conferiscono al logo eleganza ma anche un tocco di
-                    dinamismo grazie al contrasto cromatico tra "Dolce" e "Milano". La palette colori riprende
-                    quella di
-                    un croissant ed è stata declinata in varie tonalità di beige/marroncino per mantenere una
-                    coerenza
-                    visiva ma allo stesso tempo un buon contrasto e flessibilità di applicazioni.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="sociosfera" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('sociosfera')">&times;</span>
-            <div class="titolomodal">
-                <h2>La Famiglia al Centro dell'Ambito</h2>
-                <h3>LOGOTIPO</h3>
-            </div>
-            <div class="gallery-container">
-                <div class="gallery-slides">
-                    <img src="images/Sociosf_01.webp" class="slide"
-                        alt="La Famiglia al Centro dell'Ambito - immagine 1">
-                    <img src="images/Sociosf_02.webp" class="slide"
-                        alt="La Famiglia al Centro dell'Ambito - immagine 2">
-                    <img src="images/Sociosf_03.webp" class="slide"
-                        alt="La Famiglia al Centro dell'Ambito - immagine 3">
-                    <img src="images/Sociosf_04.webp" class="slide"
-                        alt="La Famiglia al Centro dell'Ambito - immagine 4">
-                    <img src="images/Sociosf_05.webp" class="slide"
-                        alt="La Famiglia al Centro dell'Ambito - immagine 5">
-                    <img src="images/Sociosf_06.webp" class="slide"
-                        alt="La Famiglia al Centro dell'Ambito - immagine 6">
-                    <img src="images/Sociosf_07.webp" class="slide"
-                        alt="La Famiglia al Centro dell'Ambito - immagine 7">
-                    <img src="images/Sociosf_08.webp" class="slide"
-                        alt="La Famiglia al Centro dell'Ambito - immagine 8">
-                </div>
-                <!-- Frecce per controllare manualmente -->
-                <a class="prev" onclick="changeSlide(-1, 'sociosfera')">&#10094;</a>
-                <a class="next" onclick="changeSlide(1, 'sociosfera')">&#10095;</a>
-
-                <div class="dots-container">
-                </div>
-            </div>
-            <div class="descrizmodal">
-                <p>Realizzazione di un logotipo per il progetto "La Famiglia al Centro dell'Ambito". Concorso
-                    indetto da
-                    Sociosfera ONLUS di Seregno (MB) e nel quale questo progetto ha ottenuto una menzione speciale.
-                </p>
-                <p>Il logo ideato riesce a comunicare al meglio i valori del progetto: la tipografia e la palette
-                    colori
-                    si adattano ad un contesto abitato da bambini mentre la linea continua di cui è composto il
-                    segno
-                    rafforza la centralità delle famiglie in questo progetto. La forma del segno riprende i confini
-                    della città di Seregno, andando quindi a rafforzare il legame con il territorio. <br> </p>
-            </div>
-        </div>
-    </div>
-
-    <div id="grafica-ovunque" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('grafica-ovunque')">&times;</span>
-            <div class="titolomodal">
-                <h2>Grafica, Ovunque - Il Graphic Design Spiegato Semplice</h2>
-                <h3>EDITORIA</h3>
-            </div>
-            <div class="gallery-container">
-                <div class="gallery-slides">
-                    <img src="images/GO_01.webp" class="slide"
-                        alt="Grafica, Ovunque - Il Graphic Design Spiegato Semplice - immagine 1">
-                    <img src="images/GO_02.webp" class="slide"
-                        alt="Grafica, Ovunque - Il Graphic Design Spiegato Semplice - immagine 2">
-                </div>
-                <!-- Frecce per controllare manualmente -->
-                <a class="prev" onclick="changeSlide(-1, 'grafica-ovunque')">&#10094;</a>
-                <a class="next" onclick="changeSlide(1, 'grafica-ovunque')">&#10095;</a>
-                <div class="dots-container">
-                </div>
-            </div>
-            <div class="descrizmodal">
-                <p>Un giorno, durante lo studio dei colori PANTONE, mi resi conto che dietro al brand e agli iconici
-                    colori che tutti siamo abituati a vedere su vari gadget c'è un enorme mondo legato alla grafica
-                    e
-                    alla stampa. Da qui nasce l'idea di <strong>scrivere un libro</strong> nel quale raccontare ciò
-                    di
-                    cui usufruiamo quotidianamente dal punto di vista del graphic design, spiegando quindi cosa c'è
-                    dietro a oggetti apparentemente banali. <br> Ad esempio: come mai i fogli A4 hanno quelle
-                    specifiche
-                    dimensioni? In cosa si differenziano le decine di font presenti su Word? Quali meccanismi di
-                    percezione visiva entrano in atto durante la visione di un quadro? <br> L'obiettivo del libro è
-                    quindi arricchire la cultura personale del lettore su tematiche considerate di nicchia ma che
-                    riguardano tutti noi e, se spiegate semplice, possono appassionare chiunque.</p>
-                <p>Mi sono dedicato interamente al libro, curandone la scrittura vera e propria e l'impaginazione. È
-                    stato suddiviso in 6 macrocategorie, tra le quali ho deciso di inserire degli intermezzi
-                    dedicati a
-                    grandi designer prevalentemente italiani dello scorso secolo per arricchire la cultura storica
-                    del
-                    lettore e far conoscere la storia dietro a loghi e poster tutt'ora diffusi. <br> ➡️ È possibile
-                    acquistarlo su <a href="https://amzn.to/3ZdjGpb">Amazon</a></p>
-            </div>
-        </div>
-    </div>
-
-    <div id="mappa-camugnano" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('mappa-camugnano')">&times;</span>
-            <div class="titolomodal">
-                <h2>Mappa della Comunità di Camugnano</h2>
-                <h3>EDITORIA</h3>
-            </div>
-            <div class="gallery-container">
-                <div class="gallery-slides">
-                    <img src="images/Camugnano_1.webp" class="slide"
-                        alt="Mappa della Comunità di Camugnano - immagine 1">
-                    <img src="images/Camugnano_2.webp" class="slide"
-                        alt="Mappa della Comunità di Camugnano - immagine 2">
-                    <img src="images/Camugnano_3.webp" class="slide"
-                        alt="Mappa della Comunità di Camugnano - immagine 3">
-                    <img src="images/Camugnano_4.webp" class="slide"
-                        alt="Mappa della Comunità di Camugnano - immagine 4">
-                    <img src="images/Camugnano_5.webp" class="slide"
-                        alt="Mappa della Comunità di Camugnano - immagine 5">
-                    <img src="images/Camugnano_6.webp" class="slide"
-                        alt="Mappa della Comunità di Camugnano - immagine 6">
-                </div>
-                <!-- Frecce per controllare manualmente -->
-                <a class="prev" onclick="changeSlide(-1, 'mappa-camugnano')">&#10094;</a>
-                <a class="next" onclick="changeSlide(1, 'mappa-camugnano')">&#10095;</a>
-                <div class="dots-container">
-                </div>
-            </div>
-            <div class="descrizmodal">
-                <p>Partecipazione al concorso indetto dal Comune di Camugnano in collaborazione con IT.A.CA e
-                    Associazione YODA per la realizzazione di una mappa della comunità. Una rappresentazione del
-                    territorio del borgo non solo geografica ma anche storica e culturale mediante l'illustrazione e
-                    la
-                    narrazione delle peculiarità del piccolo paese emiliano.</p>
-                <p></p>
-            </div>
-        </div>
-    </div>
-
-    <div id="manifestoavis" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('manifestoavis')">&times;</span>
-            <div class="titolomodal">
-                <h2>Manifesto Auguri Natalizi per AVIS Lissone</h2>
-                <h3>MANIFESTI</h3>
-            </div>
-            <div class="gallery-container">
-                <div class="gallery-slides">
-                    <img src="images/Avis.jpg" class="slide"
-                        alt="Manifesto Auguri Natalizi per AVIS Lissone - immagine 1">
-                </div>
-                <div class="dots-container">
-                </div>
-            </div>
-            <div class="descrizmodal">
-                <p>Il distaccamento comunale di Lissone (MB) di AVIS (Associazione Volontari Italiani del Sangue)
-                    richiede la realizzazione di un manifesto per augurare un buon Natale alla comunità lissonese e
-                    sfruttare l'occasione per sensibilizzare alla cultura del dono. <br> L'elaborato da me
-                    realizzato è
-                    stato classificato al terzo posto del concorso da loro indetto.</p>
-                <p>L'obiettivo di un manifesto è catturare l'attenzione dei passanti, necessità che viene
-                    amplificata
-                    dal fatto che lo stile grafico-comunicativo di AVIS è da sempre molto statico. È stato quindi
-                    scelto
-                    di adottare un layout inusuale per questo prodotto: una prima pagina di giornale. L'headline
-                    interrogatio richiama l'attenzione del passante che approfondendo la lettura vede spiccare, tra
-                    una
-                    serie di regali natalizi banali, quelli speciali e inusuali che si possono fare donando il
-                    sangue
-                    con AVIS. Gli altri elementi della prima pagina, come le civette o gli articoli di fondo, sono
-                    stati
-                    utilizzati per fornire informazioni sull'associazione AVIS ai lettori più curiosi.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="ancona" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('ancona')">&times;</span>
-            <div class="titolomodal">
-                <h2>City Branding Città di Ancona</h2>
-                <h3>BRANDING</h3>
-            </div>
-            <div class="gallery-container">
-                <div class="gallery-slides">
-                    <img src="images/Ancona_1.jpg" class="slide" alt="City Branding Città di Ancona - immagine 1">
-                    <img src="images/Ancona_2.jpg" class="slide" alt="City Branding Città di Ancona - immagine 2">
-                    <img src="images/Ancona_3.jpg" class="slide" alt="City Branding Città di Ancona - immagine 3">
-                    <img src="images/Ancona_4.jpg" class="slide" alt="City Branding Città di Ancona - immagine 4">
-                    <img src="images/Ancona_5.jpg" class="slide" alt="City Branding Città di Ancona - immagine 5">
-                    <img src="images/Ancona_6.jpg" class="slide" alt="City Branding Città di Ancona - immagine 6">
-                    <img src="images/Ancona_7.jpg" class="slide" alt="City Branding Città di Ancona - immagine 7">
-                    <img src="images/Ancona_8.jpg" class="slide" alt="City Branding Città di Ancona - immagine 8">
-                    <img src="images/Ancona_9.jpg" class="slide" alt="City Branding Città di Ancona - immagine 9">
-                    <img src="images/Ancona_10.jpg" class="slide" alt="City Branding Città di Ancona - immagine 10">
-                    <img src="images/Ancona_11.jpg" class="slide" alt="City Branding Città di Ancona - immagine 11">
-                    <img src="images/Ancona_12.jpg" class="slide" alt="City Branding Città di Ancona - immagine 12">
-                    <img src="images/Ancona_13.jpg" class="slide" alt="City Branding Città di Ancona - immagine 13">
-                    <img src="images/Ancona_14.jpg" class="slide" alt="City Branding Città di Ancona - immagine 14">
-                    <img src="images/Ancona_15.jpg" class="slide" alt="City Branding Città di Ancona - immagine 15">
-                    <img src="images/Ancona_16.jpg" class="slide" alt="City Branding Città di Ancona - immagine 16">
-                    <img src="images/Ancona_17.jpg" class="slide" alt="City Branding Città di Ancona - immagine 17">
-                    <img src="images/Ancona_18.jpg" class="slide" alt="City Branding Città di Ancona - immagine 18">
-                    <img src="images/Ancona_19.jpg" class="slide" alt="City Branding Città di Ancona - immagine 19">
-                </div>
-                <a class="prev" onclick="changeSlide(-1, 'ancona')">&#10094;</a>
-                <a class="next" onclick="changeSlide(1, 'ancona')">&#10095;</a>
-                <div class="dots-container">
-                </div>
-            </div>
-            <div class="descrizmodal">
-                <p>Realizzazione, sul modello del <a
-                        href="https://aiap.it/bando-per-il-city-branding-della-citta-di-ancona/" target="_blank">contest
-                        promosso da AIAP</a>, di un City Branding per la città di Ancona corredato da un piano di
-                    comunicazione della durata di 2 anni per valorizzare il territorio e l'identità della città,
-                    proponendola come destinazione autentica e innovativa rivolgendosi sia a potenziali turisti che ai
-                    cittadini. <br>Il simbolo progettato racchiude i tre valori alla base di questa poliedrica città:
-                    Anima,
-                    Costa e Natura, ognuno caratterizzato da una forma e un colore. Grazie alla sua modularità, risulta
-                    molto versatile e dinamico. <br> Il piano di comunicazione integrato - suddiviso per fase di teaser,
-                    lancio, consolidamento e recall - rispecchia lo spirito vivace della città unendo installazioni e
-                    attività sul territorio a prodotti editoriali e campagne di marketing digitale.</p>
-            </div>
-        </div>
-    </div>
 
     <script>
         var modalaperto

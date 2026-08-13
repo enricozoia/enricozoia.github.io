@@ -857,7 +857,6 @@ strong {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    object-position: 50% 82%;
 }
 
 #projectsection {
@@ -878,6 +877,10 @@ strong {
     column-gap: var(--space-md);
     margin-top: 15px;
     width: 400vw;
+}
+
+.una-col {
+    column-count: 1;
 }
 
 
@@ -1049,9 +1052,6 @@ strong {
         margin-top: 6vh
     }
 
-    .project-img {
-        content-fit: auto;
-    }
 }
 
 /* ==========================================================================
