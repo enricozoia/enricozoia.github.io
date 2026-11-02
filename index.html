@@ -617,8 +617,20 @@
             window.addEventListener('resize', setImageWidths);
             setInterval(nextSlide, 2000);
         });
-    </script>
 
+    </script>
+    <script type="text/javascript">
+      (() => {
+        const name = 'outbound-link-click';
+        document.querySelectorAll('a').forEach(a => {
+          const isWebLink = a.protocol === 'http:' || a.protocol === 'https:';
+          if (isWebLink && a.host !== window.location.host && !a.getAttribute('data-umami-event')) {
+            a.setAttribute('data-umami-event', name);
+            a.setAttribute('data-umami-event-url', a.href);
+          }
+        });
+      })();
+    </script>
 </body>
 
 </html>
